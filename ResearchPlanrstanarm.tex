@@ -74,25 +74,59 @@
 \subsection*{H MC Algorithm is faster}
 
 \section*{Approach}
+This project (software development and dissemination) will be guided by our multidisciplinary project team. The team will conduct its work through regularly scheduled weekly meetings, and continued online collaboration via Github and email. 
+
 Multidimensional statistical and computational methods for analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional data
 
 \subsection*{Preliminary work}
-Funded through several mechanisms including the National Science Foundation and the National Institute of Health, the team submitting this proposal already developed and implemented many related algorithms and software packages. The proposed work is a direct continuation of the below described preliminary work of developing and implementing novel ground breaking algorithms for hierarchical modeling of complex data.
+
+  
+
+\subsubsection*{Algorithm, software and prototype development and their application to biomedical data}
+Funded through several mechanisms including the National Science Foundation (NSF SES-1205516), the team submitting this proposal already developed and implemented many related algorithms and software packages and applied them to biomedical problems funded through the National Institute of Health (5R01GM074806, 5KL2TR001071). The proposed work is a direct continuation of the below described preliminary work of developing and implementing novel ground breaking algorithms for hierarchical modeling of complex data.
+
+\paragraph*{Prior work in hierarchical and complex modeling in medicine} Dr. Andreae published several systematic reviews and meta-analyses \cite{Andreae2013, Andreae2015, Carter2015}. Dr. Goodrich Dr. Hall is nationally recognized for the development and application of change point models in epidemiology and surveillance. Dr. Gong is leading an NIH funded trial to predict and improve respiratory outcomes after intubation based on real time electronic medical records.  Drs. Andreae, Goodrich and collaborators used the software prototype \textit{rstanarm} and shinystan to build a multilevel hierarchical model to investigate health care disparities and quality of anesthesia delivery in the large National Clinical Outcomes Registry maintained by the American Society of Anesthesiology. Dr. Gelman is internationally recognized as a leader in hierarchical modeling with past and present funding and publication in pharmacodynamic modeling, ...
+
+\paragraph*{Previous experience in software development} 
+The team has ample experience in the development of complex statistical software and in the visualization of model parameters, co-variance matrices and statistical data.  Drs. Goodrich and Gelman developed several widely cited and used software packages including the probabilistic programming language Stan\cite{SDT2014}, the basis for the proposed work. Dr. Goodrich and Andreae work together on the preliminary software packages shinystan and \textit{rstanarm}. Below we outline the trajectory that led to the current project proposal:
+\newline
+
 \subsubsection*{A novel algorithm for Bayesian inference: Hamiltonian Monte Carlo}
 Dr. Gelman, Betancourt and collaborators developed Hamiltonian Monte Carlo (HMC) methods, a novel approach to computationally implement complex hierarchical Bayesian inference through Monte Carlo simulation. 
-\subsubsection*{Open source computational implementation of HMC for diverse interfaces: Stan.} Drs. Gelman, Betancourt and Goodrich developed Stan, an open source multipurpose probabilistic programming language to build complex Bayesian models in several open source and commerical software including so far Stata, Mathlab, Python, Julia and R/Rstudio.  
+
+\subsubsection*{Open source computational implementation of HMC for diverse interfaces: Stan.} Drs. Gelman, Betancourt and Goodrich developed Stan, an open source multipurpose probabilistic programming language to build complex Bayesian models in several open source and commerical software including so far Stata, Mathlab, Python, Julia and R/Rstudio. 
+ 
 \subsubsection*{Implementation in the open source software environment R/Rstudio: rstan} Drs. Goodrich, Gelman, Betancourt and collaborators developed Rstan, a software package to use Hamiltonian Monte Carlo algorithms the open source statistical software enviroment R/Rstudio.
-\subsubsection*{Prototype software development: shinyStan and rstanArm} Drs. Goodrich, Andreae, Gelman and Betancourt and collaborators developed two additional prototype software package for the open source statistical software environment R/Rstudio, called (1) rstanarm and (2) shinystan.
+\subsubsection*{Prototype software development: shinyStan and \textit{rstanarm}} Drs. Goodrich, Andreae, Gelman and Betancourt and collaborators developed two additional prototype software package for the open source statistical software environment R/Rstudio, called (1) \textit{rstanarm} and (2) shinystan.
 
-\paragraph*{(1) rstanarm makes building advanced hierarchical Bayesian models accessible to data scientist} without the need for an understanding of the complexities underlying Hamiltonian Monte Carlo. This software package uses the same notation for model description as other widely accepted software packages for mixed modeling in R/Rstudio like lme4. 
-\paragraph*{(2) shinystan is an interactive tool to explore and diagnose the output of Monte Carlo simulations}for Bayesian inference.  Also a package for R/Rstudio, shinystan  provides multidimensional statistical, graphical and computational tools for any analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional MCMC output, but is optimized for HMC.
+\paragraph*{(1) \textit{rstanarm} is build to make advanced hierarchical Bayesian models accessible to data scientist} without the need for an understanding of the complexities underlying Hamiltonian Monte Carlo. This software package uses the same notation for model description as other widely accepted software packages for mixed modeling in R/Rstudio like lme4. 
+\paragraph*{(2) shinystan is an interactive tool to explore and diagnose the output of Monte Carlo simulations}for Bayesian inference.  \textit{shinystan} is a graphical user interface for interactively exploring virtually any Bayesian model fit using a Markov chain Monte Carlo algorithm. Also a package for R/Rstudio, shinystan  provides multidimensional statistical, graphical and computational tools for any analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional MCMC output, but is optimized for HMC. 
 
-\subsection*{Team experience in complex hierarchical modeling in medicine and software development}
+\subsection*{Project scope and goals }
+The project proposes to develop further develop these two prototypes (1) \textit{rstanarm} and (2) \textit{shinystan} into solid, reliable, tested software packages. Both packages will serve as appendage to the \textit{rstan} package (we developed), which enables the most common applied regression models to be estimated using novel Hamiltonian Monte Carlo algorithms. We will makes our new two packages \textit{rstanarm} and \textit{shinystan} available to researchers and the general public via the software repository CRAN. 
 
-\paragraph*{Our team has extensive experience in hierarchical and complex modeling in medicine} and electronic medical records. Dr. Andreae published several systematic reviews and meta-analyses \cite{Andreae2013, Andreae2015, Carter2015}. Dr. Goodrich Dr. Hall is nationally recognized for the development and application of change point models in epidemiology and surveillance. Dr. Gong is leading an NIH funded trial to predict and improve respiratory outcomes after intubation based on real time electronic medical records.  Drs. Andreae, Goodrich and collaborators used the software prototype rstanarm and shinystan to build a multilevel hierarchical model to investigate health care disparities and quality of anesthesia delivery in the large National Clinical Outcomes Registry maintained by the American Society of Anesthesiology. Dr. Gelman is internationally recognized as a leader in hierarchical modeling with past and present funding and publication in pharmacodynamic modeling, ...
+\subsubsection*{(1) rstanarm}
+The software package \textit{rstanarm} will enable the estimation of advanced applied general linear regression models using the existing probabilistic programming language Stan. \textit{rstanarm} implements full Bayesian statistical inference;  however, \textit{rstanarm} will allow users to specify their complex hierarchical models using simplified syntax. Clinical data scientist can therefore take advantage of the  more efficient inference of the cutting edge algorithms implemented in Stan, without knowledge of the underlying programming language or the parameter reparametrizations useful to achieve faster model convergence.
 
-\paragraph*{Our team has a solid background in the development of complex statistical software} and in the visualization of model parameters, co-variance matrices and statistical data.  Drs. Goodrich and Gelman developed several widely cited and used software packages including the probabilistic programming language Stan\cite{SDT2014}, the basis for the proposed work. Dr. Goodrich and Andreae work together on the preliminary software packages shinystan and rstanarm.  
+\paragraph*{Model functions in \textit{rstanarm}}
+The prototype of \textit{rstanarm} already implements many modeling functions; the classical generalized linear regression model functions $stan\_glm$ and $stan\_glmer$ are illustrated below to demonstrate simplicity of model formulation.  
 
+Bayesian generalized linear models with and without group-specific terms via Stan are already implemented in \textit{rstanarm}. The $stan\_glm$ and $stan\_glmer$ functions are similar in syntax to the R software functions $glm$ and $glmer$ as used in the R package \textit{lme4}, respectively, but rather than maximum likelihood estimation of generalized linear models, full Bayesian estimation is performed  via MCMC. 
+
+\paragraph*{Model specification}
+
+Models are specified using customary R modeling syntax, e.g. analogously to \textit{lme4}, \textit{rstanarm} uses a two-sided linear formula describing both the fixed-effects and random-effects part of the model; the dependent response variable, for example $y$ on the left of a $~$ operator and the independent terms $x_1, x_2...$, separated by $+$ operators, on the right. Random-effects terms are distinguished by vertical bars $|$ separating expressions for design matrices from grouping factors, for example:
+
+$y \sim x1 +(x2|x3)$
+
+In Bayesian inference, priors incorporate subjective beliefs or existing information about a parameter as discussed under significance. All Bayesian models need priors and the prototype of \textit{rstanarm} already adds independent weakly informative priors on the coefficients of the generalized linear model, but prior can be specified by the user. The specification of the prior can such be left to the default implementation in \textit{rstanarm} or the user can choose from a broad array of distribution, e.g. for the intercept one might choose the Student t distribution, which approaches the normal distribution as the degrees of freedom approach infinity and as the degrees of freedom are one, the Cauchy distribution, leaving the user the option of robust priors to allow for outliers. 
+
+
+\subsubsection*{(2) shinystan}
+We propose to develop \href{http://andrewgelman.com/2015/03/02/introducing-shinystan/}{\textit{shinystan}} as a the graphical user interface for interactively exploring virtually any Bayesian model fit using a Markov chain Monte Carlo algorithm. We will implement \textit{shinystan} in \textit{Shiny}, an R package for interactive web applications. The graphical rendering of our proposed package \textit{shinystan} is building on the superb graphical package ggplot by Hackley Wickham. Many graphical functions of \textit{shinystan} will eventually be ported directly into \textit{rstan} to allow users to integrate the graphical and numerical output of \textit{shinystan} directly into reports generated with the markdown in R.
+
+Our motivation for \textit{shinystan} was the dearth of 
+ 
 \subsubsection*{Best practices and proven methods for software design, construction, and implementation}
 \subsubsection*{Mechanisms for incorporating user reported corrections into the software.}
 
