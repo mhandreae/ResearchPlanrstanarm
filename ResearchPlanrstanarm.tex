@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NIH Grant Proposal for the Specific Aims and Research Plan Sections
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,notitlepage]{article}
+
+% A note on fonts: As of 2013, NIH allows Georgia, Arial, Helvetica, and Palatino Linotype. LaTeX doesn't have Georgia or Arial built in; you can try to come up with your own solution if you wish to use those fonts. Here, Palatino & Helvetica are available, leave the font you want to use uncommented while commenting out the other one.
+
+\usepackage[super]{natbib}
+\usepackage{palatino} % Palatino font
+%\usepackage{helvet} % Helvetica font
+\renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
+\usepackage[T1]{fontenc}
+\linespread{1.05} % A little extra line spread is better for the Palatino font
+\usepackage{hyperref} % to allow hyperlinks to websites on the internet
+\usepackage[hypcap]{caption} % to point to the top of the image
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{graphicx} % Required for including images
+\usepackage{booktabs} % Top and bottom rules for tables
+\usepackage{wrapfig} % Allows in-line images
+\usepackage[labelfont=footnotesize]{caption} % Make figure numbering in captions bold
+\usepackage[top=0.6in,bottom=0.6in,left=0.6in,right=0.6in]{geometry} % Reduce the size of the margin
+\pagestyle{empty} % Remove page numbers
+
+\hyphenation{ionto-pho-re-tic iso-tro-pic fortran} % Specifies custom hyphenation points for words or words that shouldn't be hyphenated at all
+
+  % to reduce white space between SECTIONS
+\usepackage[compact]{titlesec}
+%\titlespacing{\part}{0pt}{5pt}{4pt}
+%\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{-2pt}{*0}{*0}
+%\titlespacing{\subparagraph}{-5pt}{*0}{*0}
+%\titlespacing*{\subparagraph} {\parindent}{1ex plus 1ex minus .2ex}{0.5em}
+
+  
+  % to reduce white space between PARAGRAPHS
+%\setlength{\parskip}{-2pt}
+% \setlength{\parsep}{-2pt}
+
+  % additional parameters
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+%\setlength{\topmargin}{0pt}
+%\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{-2pt}
+%\setlength{\parindent}{1cm}
+
+% to reduce white space around figures
+% \setlength{\textfloatsep}{0pt plus 0pt minus 0pt}
+
+\begin{document}
+
+\part*{Research Strategy}
+\section*{Significance}
+
+\subsection*{Big Models for Big Data}
+
+\subsection*{Need for more complex models for EHR}
+
+\subsubsection*{subsubsection on why}
+
+\subsection*{Difficulty to fit complex models}
+
+\subsection*{Stan is flexible and fast}
+
+\subsection*{Modeling should be accessible}
+
+\section*{Innovation}
+
+\subsection*{H MC Algorithm is faster}
+
+\section*{Approach}
+Multidimensional statistical and computational methods for analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional data
+
+\subsection*{RstanArm Development}
+
+\subsubsection*{Best practices and proven methods for software design, construction, and implementation}
+\subsubsection*{Mechanisms for incorporating user reported corrections into the software.}
+
+\subsection*{Timeline}
+
+
+
+
+\begin{table}[]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llllll}
+\hline
+            & Year 1                             & Year 2                  & Year 3                       & Year 4             & Year 5       \\ \hline
+Stan GLM    & meta-analysis                      & 3-4 level models        & \multicolumn{2}{l}{semi- and parametric survival} & change point \\
+Shinystan   & Binary posterior predicitive check & dependence plot         & tree depth plot              &                    &              \\
+New Methods & Dependence plot                    & Multilevel model priors &                              &                    &              \\ \hline
+\end{tabular}
+}
+\caption{Timeline: The above timeline outlines our targets and milestones over the five year grant period.}
+\label{Timeline}
+\end{table}
+
+\subsection*{test}
+
+\end{document}
