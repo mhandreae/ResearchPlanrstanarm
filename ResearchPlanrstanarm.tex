@@ -75,7 +75,16 @@
 \section*{Approach}
 Multidimensional statistical and computational methods for analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional data
 
-\subsection*{RstanArm Development}
+\subsection*{Preliminary work}
+Funded through several mechanisms including the National Science Foundation and the National Institute of Health, the team submitting this proposal already developed and implemented many related algorithms and software packages. The proposed work is a direct continuation of this preliminary work of developing and implementing novel ground breaking algorithms for hierarchical modeling of complex data.
+\subsubsection*{A novel algorithm for Bayesian inference: Hamiltonian Monte Carlo}
+Dr. Gelman, Betancourt and collaborators developed Hamiltonian Monte Carlo (HMC) methods, a novel approach to computationally implement complex hierarchical Bayesian inference through Monte Carlo simulation. 
+\subsubsection*{Open source computational implementation of HMC for diverse interfaces: Stan.} Drs. Gelman, Betancourt and Goodrich developed Stan, an open source multipurpose probabilistic programming language to build complex Bayesian models in several open source and commerical software including so far Stata, Mathlab, Python, Julia and R/Rstudio.  
+\subsubsection*{Implementation in the open source software environment R/Rstudio: rstan} Drs. Goodrich, Gelman, Betancourt and collaborators developed Rstan, a software package to use Hamiltonian Monte Carlo algorithms the open source statistical software enviroment R/Rstudio.
+\subsubsection*{Prototype software development: shinyStan and rstanArm} Drs. Goodrich, Gelman and Betancourt and collaborators developed two additional prototype software package for the open source statistical software environment R/Rstudio, called (1) rstanarm and (2) shinystan.
+
+\paragraph*{(1) rstanarm makes building advanced hierarchical Bayesian models accessible to data scientist} without the need for an understanding of the complexities underlying Hamiltonian Monte Carlo. This software package uses the same notation for model description as other widely accepted software packages for mixed modeling in R/Rstudio like lme4. 
+\paragraph*{(2) shinystan is an interactive tool to explore and diagnose the output of Monte Carlo simulations}for Bayesian inference.  Also a package for R/Rstudio, shinystan  provides multidimensional statistical, graphical and computational tools for any analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional MCMC output, but is optimized for HMC.
 
 \subsubsection*{Best practices and proven methods for software design, construction, and implementation}
 \subsubsection*{Mechanisms for incorporating user reported corrections into the software.}
