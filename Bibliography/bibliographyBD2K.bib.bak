@@ -119,8 +119,6 @@
   Year                     = {2015},
 
   Month                    = {Sep},
-
-  __markedentry            = {[Micheal:]},
   Abstract                 = {Chronic neuropathic pain, the most frequent condition affecting the peripheral nervous system, remains underdiagnosed and difficult to treat. Inhaled cannabis may alleviate chronic neuropathic pain. Our objective was to synthesize the evidence on the use of inhaled cannabis for chronic neuropathic pain. We performed a systematic review and a meta-analysis of individual patient data. We registered our protocol with PROSPERO CRD42011001182. We searched in Cochrane Central, PubMed, EMBASE, and AMED. We considered all randomized controlled trials investigating chronic painful neuropathy and comparing inhaled cannabis with placebo. We pooled treatment effects following a hierarchical random-effects Bayesian responder model for the population-averaged subject-specific effect. Our evidence synthesis of individual patient data from 178 participants with 405 observed responses in 5 randomized controlled trials following patients for days to weeks provides evidence that inhaled cannabis results in short-term reductions in chronic neuropathic pain for 1 in every 5 to 6 patients treated (number needed to treat = 5.6 with a Bayesian 95\% credible interval ranging between 3.4 and 14). Our inferences were insensitive to model assumptions, priors, and parameter choices. We caution that the small number of studies and participants, the short follow-up, shortcomings in allocation concealment, and considerable attrition limit the conclusions that can be drawn from the review. The Bayes factor is 332, corresponding to a posterior probability of effect of 99.7\%.This novel Bayesian meta-analysis of individual patient data from 5 randomized trials suggests that inhaled cannabis may provide short-term relief for 1 in 5 to 6 patients with neuropathic pain. Pragmatic trials are need to evaluate the long-term benefits and risks of this treatment.},
   Doi                      = {10.1016/j.jpain.2015.07.009},
   Institution              = {Icahn School of Medicine at Mount Sinai, New York, New York.},
@@ -264,8 +262,8 @@
   Pages                    = {e0120113},
   Volume                   = {10},
 
-  __markedentry            = {[Micheal:6]},
-  Abstract                 = {Approximately 28.5 million people living with HIV are eligible for treatment (CD4<500), but currently have no access to antiretroviral therapy. Reduced serum level of micronutrients is common in HIV disease. Micronutrient supplementation (MNS) may mitigate disease progression and mortality.We synthesized evidence on the effect of micronutrient supplementation on mortality and rate of disease progression in HIV disease.We searched MEDLINE, EMBASE, the Cochrane Central, AMED and CINAHL databases through December 2014, without language restriction, for studies of greater than 3 micronutrients versus any or no comparator. We built a hierarchical Bayesian random effects model to synthesize results. Inferences are based on the posterior distribution of the population effects; posterior distributions were approximated by Markov chain Monte Carlo in OpenBugs.From 2166 initial references, we selected 49 studies for full review and identified eight reporting on disease progression and/or mortality. Bayesian synthesis of data from 2,249 adults in three studies estimated the relative risk of disease progression in subjects on MNS vs. control as 0.62 (95\% credible interval, 0.37, 0.96). Median number needed to treat is 8.4 (4.8, 29.9) and the Bayes Factor 53.4. Based on data reporting on 4,095 adults reporting mortality in 7 randomized controlled studies, the RR was 0.84 (0.38, 1.85), NNT is 25 (4.3, ?).MNS significantly and substantially slows disease progression in HIV+ adults not on ARV, and possibly reduces mortality. Micronutrient supplements are effective in reducing progression with a posterior probability of 97.9\%. Considering MNS low cost and lack of adverse effects, MNS should be standard of care for HIV+ adults not yet on ARV.},
+  __markedentry            = {[Micheal:]},
+  Abstract                 = {Approximately 28.5 million people living with HIV are eligible for treatment (CD4<500), but currently have no access to antiretroviral therapy. Reduced serum level of micronutrients is common in HIV disease. Micronutrient supplementation (MNS) may mitigate disease progression and mortality.We synthesized evidence on the effect of micronutrient supplementation on mortality and rate of disease progression in HIV disease.We searched MEDLINE, EMBASE, the Cochrane Central, AMED and CINAHL databases through December 2014, without language restriction, for studies of greater than 3 micronutrients versus any or no comparator. We built a hierarchical Bayesian random effects model to synthesize results. Inferences are based on the posterior distribution of the population effects; posterior distributions were approximated by Markov chain Monte Carlo in OpenBugs.From 2166 initial references, we selected 49 studies for full review and identified eight reporting on disease progression and/or mortality. Bayesian synthesis of data from 2,249 adults in three studies estimated the relative risk of disease progression in subjects on MNS vs. control as 0.62 (95\% credible interval, 0.37, 0.96). Median number needed to treat is 8.4 (4.8, 29.9) and the Bayes Factor 53.4. Based on data reporting on 4,095 adults reporting mortality in 7 randomized controlled studies, the RR was 0.84 (0.38, 1.85), NNT is 25 (4.3, inf).MNS significantly and substantially slows disease progression in HIV+ adults not on ARV, and possibly reduces mortality. Micronutrient supplements are effective in reducing progression with a posterior probability of 97.9\%. Considering MNS low cost and lack of adverse effects, MNS should be standard of care for HIV+ adults not yet on ARV.},
   Doi                      = {10.1371/journal.pone.0120113},
   Institution              = {Icahn School of Medicine at Mount Sinai, New York, NY, United States of America.},
   Language                 = {eng},
@@ -326,6 +324,17 @@
   Owner                    = {Michael Andreae},
   Pmid                     = {25714825},
   Timestamp                = {2015.03.03}
+}
+
+@Misc{Creativecommonsorg2015,
+  Title                    = {{Creative Commons — Attribution-ShareAlike 4.0 International— CC BY-SA 4.0}},
+
+  Author                   = {{Creativecommons}},
+  Year                     = {2015},
+
+  Owner                    = {Micheal},
+  Timestamp                = {2015.11.10},
+  Url                      = {http://creativecommons.org/licenses/by-sa/4.0/}
 }
 
 @Book{Daniels2008,

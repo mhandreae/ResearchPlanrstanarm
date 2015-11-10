@@ -19,4 +19,14 @@ G.~M. Carter, D.~Indyk, M.~Johnson, M.~Andreae, K.~Suslov, S.~Busani,
 \newblock Micronutrients in HIV: a Bayesian meta-analysis.
 \newblock {\em PLoS One}, 10(4):e0120113, 2015. PMID: 25830916.
 
+\bibitem{SDT2014}
+{Stan Development Team}.
+\newblock Stan: A C++ Library for Probability and Sampling, Version 2.5.0,
+  2014.
+
+\bibitem{Creativecommonsorg2015}
+{Creativecommons.org}.
+\newblock Creative Commons - Attribution-ShareAlike 4.0 International - CC
+  BY-SA 4.0, 2015.
+
 \end{thebibliography}
