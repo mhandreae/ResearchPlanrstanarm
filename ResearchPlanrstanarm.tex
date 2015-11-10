@@ -76,15 +76,21 @@
 Multidimensional statistical and computational methods for analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional data
 
 \subsection*{Preliminary work}
-Funded through several mechanisms including the National Science Foundation and the National Institute of Health, the team submitting this proposal already developed and implemented many related algorithms and software packages. The proposed work is a direct continuation of this preliminary work of developing and implementing novel ground breaking algorithms for hierarchical modeling of complex data.
+Funded through several mechanisms including the National Science Foundation and the National Institute of Health, the team submitting this proposal already developed and implemented many related algorithms and software packages. The proposed work is a direct continuation of the below described preliminary work of developing and implementing novel ground breaking algorithms for hierarchical modeling of complex data.
 \subsubsection*{A novel algorithm for Bayesian inference: Hamiltonian Monte Carlo}
 Dr. Gelman, Betancourt and collaborators developed Hamiltonian Monte Carlo (HMC) methods, a novel approach to computationally implement complex hierarchical Bayesian inference through Monte Carlo simulation. 
 \subsubsection*{Open source computational implementation of HMC for diverse interfaces: Stan.} Drs. Gelman, Betancourt and Goodrich developed Stan, an open source multipurpose probabilistic programming language to build complex Bayesian models in several open source and commerical software including so far Stata, Mathlab, Python, Julia and R/Rstudio.  
 \subsubsection*{Implementation in the open source software environment R/Rstudio: rstan} Drs. Goodrich, Gelman, Betancourt and collaborators developed Rstan, a software package to use Hamiltonian Monte Carlo algorithms the open source statistical software enviroment R/Rstudio.
-\subsubsection*{Prototype software development: shinyStan and rstanArm} Drs. Goodrich, Gelman and Betancourt and collaborators developed two additional prototype software package for the open source statistical software environment R/Rstudio, called (1) rstanarm and (2) shinystan.
+\subsubsection*{Prototype software development: shinyStan and rstanArm} Drs. Goodrich, Andreae, Gelman and Betancourt and collaborators developed two additional prototype software package for the open source statistical software environment R/Rstudio, called (1) rstanarm and (2) shinystan.
 
 \paragraph*{(1) rstanarm makes building advanced hierarchical Bayesian models accessible to data scientist} without the need for an understanding of the complexities underlying Hamiltonian Monte Carlo. This software package uses the same notation for model description as other widely accepted software packages for mixed modeling in R/Rstudio like lme4. 
 \paragraph*{(2) shinystan is an interactive tool to explore and diagnose the output of Monte Carlo simulations}for Bayesian inference.  Also a package for R/Rstudio, shinystan  provides multidimensional statistical, graphical and computational tools for any analyzing, inspecting, displaying, representing, parsing, and searching high-dimensional MCMC output, but is optimized for HMC.
+
+\subsection*{Team experience in complex hierarchical modeling in medicine and software development}
+
+\paragraph*{Our team has extensive experience in hierarchical and complex modeling in medicine} and electronic medical records. Drs. Andreae and Hall published several systematic reviews and meta-analysis. Dr. Goodrich Dr. Hall is nationally recognized for the development and application of change point models in epidemiology and surveillance. Dr. Gong is leading an NIH funded trial to predict and improve respiratory outcomes after intubation based on real time electronic medical records.  Drs. Andreae, Goodrich and collaborators used the software prototype rstanarm and shinystan to build a multilevel hierarchical model to investigate health care disparities and quality of anesthesia delivery in the large National Clinical Outcomes Registry maintained by the American Society of Anesthesiology. Dr. Gelman is internationally recognized as a leader in hierarchical modeling with past and present funding and publication in pharmacodynamic modeling, ...
+
+\paragraph*{Our team has a solid background in the development of complex statistical software} and in the visualization of statistical data and parameters.  Drs. Goodrich and Gelman developed several widely cited and used software packages including the probabilistic programming language Stan, the basis for the proposed work. Dr. Goodrich and Andreae work together on the preliminary software packages shinystan and rstanarm.  
 
 \subsubsection*{Best practices and proven methods for software design, construction, and implementation}
 \subsubsection*{Mechanisms for incorporating user reported corrections into the software.}
@@ -100,7 +106,7 @@ Dr. Gelman, Betancourt and collaborators developed Hamiltonian Monte Carlo (HMC)
 \hline
             & Year 1                             & Year 2                  & Year 3                       & Year 4             & Year 5       \\ \hline
 Stan GLM    & meta-analysis                      & 3-4 level models        & \multicolumn{2}{l}{semi- and parametric survival} & change point \\
-Shinystan   & Binary posterior predicitive check & dependence plot         & tree depth plot              &                    &              \\
+Shinystan   & Binary posterior predictive check & dependence plot         & tree depth plot              &                    &              \\
 New Methods & Dependence plot                    & Multilevel model priors &                              &                    &              \\ \hline
 \end{tabular}
 }
