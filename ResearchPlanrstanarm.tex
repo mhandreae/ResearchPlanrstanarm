@@ -113,7 +113,9 @@ Inference based on partial pooling outperforms (a) the no-pooling and (b) the co
 
 We choose the middle ground: for our richly organized NACOR data set, inference using partial pooling or hierarchical modeling is especially effective , because the estimate of each individual parameter is simultaneously informed by data from all the other patients in our cohort, improving inferences in particular for subgroups with sparse data. \cite{Gelman2009}. Effron explained this apparent paradox well to non-statisticians in the \href{http://www.nature.com/scientificamerican/journal/v236/n5/pdf/scientificamerican0577-119.pdf}{Scientific American} \cite{Efron_1977,Efron_1977a}. 
 
-\subsubsection*{Meta analysis}
+\subsubsection*{Meta-analysis is pooling hierarchically structured outcome data for evidence based clinical care}
+
+Clinicians are familiar with systematic reviews and meta-analysis\cite{Sackett1996}. Evidence synthesis (a more accurate term than meta-analysis) is a powerful tool to pool clinical trials to guide evidence based clinical care \cite{Ashby2000}. Rigorous evidence synthesis is considered the highest level of evidence to support clinical decision making \cite{Cook1997}. However, long-term studies on perioperative outcomes tend to vary in design and reported outcomes\cite{Andreae2013}, making evidence synthesis challenging with classical or frequentist statistical models\cite{Spiegelhalter2000}. The integration of dichotomous outcomes with continuous outcomes often requires access to individual patient data, rarely available for evidence synthesis. Outcomes recorded at different intervals in different studies or repeated measures can lead to unit of analysis problems--concerns about counting data twice. Different study designs can make it difficult to perform meta-analysis with classical statistical methods and standard systematic review software \cite{Deeks2011chapter}. 
 
 \paragraph*{Need for more complex models for EHR}
 
