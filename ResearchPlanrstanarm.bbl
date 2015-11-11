@@ -67,12 +67,6 @@ B.~Efron and C.~N. Morris.
 \newblock Stein's paradox in statistics.
 \newblock {\em Scientific American}, 263(5):119--127, 1977.
 
-\bibitem{Cook1997}
-D.~J. Cook, C.~D. Mulrow, and R.~B. Haynes.
-\newblock Systematic reviews: synthesis of best evidence for clinical
-  decisions.
-\newblock {\em Ann Intern Med}, 126(5):376--380, Mar 1997. PMID: 9054282.
-
 \bibitem{Sackett1996}
 D.~L. Sackett, W.~M. Rosenberg, J.~A. Gray, R.~B. Haynes, and W.~S. Richardson.
 \newblock Evidence based medicine: what it is and what it isn't.
@@ -83,12 +77,29 @@ D.~Ashby and A.~F. Smith.
 \newblock Evidence-based medicine as Bayesian decision-making.
 \newblock {\em Stat Med}, 19(23):3291--3305, Dec 2000. PMID: 11113960.
 
+\bibitem{Cook1997}
+D.~J. Cook, C.~D. Mulrow, and R.~B. Haynes.
+\newblock Systematic reviews: synthesis of best evidence for clinical
+  decisions.
+\newblock {\em Ann Intern Med}, 126(5):376--380, Mar 1997. PMID: 9054282.
+
+\bibitem{Andreae2013}
+M.~H. Andreae and D.~A. Andreae.
+\newblock Regional anaesthesia to prevent chronic pain after surgery: a
+  Cochrane systematic review and meta-analysis.
+\newblock {\em Br J Anaesth}, 111(5):711--720, Nov 2013. PMCID: PMC3793661.
+
 \bibitem{Spiegelhalter2000}
 D.~J. Spiegelhalter, J.~P. Myles, D.~R. Jones, and K.~R. Abrams.
 \newblock Bayesian methods in health technology assessment: a review.
 \newblock {\em Health Technol Assess}, 4(38):1--130, 2000. PMID: 11134920.
 
-\bibitem{deeks2011chapter}
+\bibitem{Thompson2002}
+S.~G. Thompson and J.~P.~T. Higgins.
+\newblock How should meta-regression analyses be undertaken and interpreted?
+\newblock {\em Stat Med}, 21(11):1559--1573, Jun 2002. PMID: 12111920.
+
+\bibitem{Deeks2011chapter}
 J.~Deeks, J.~Higgins, and D.~Altman.
 \newblock Chapter 9--Analysing Data and Undertaking Meta-analyses: Cochrane
   Handbook for Systematic Reviews of Interventions Version 5.1. 0 [updated
@@ -96,11 +107,30 @@ J.~Deeks, J.~Higgins, and D.~Altman.
 \newblock {\em Cochrane Handbook for Systematic Reviews of Interventions}, 5,
   2011.
 
-\bibitem{Andreae2013}
-M.~H. Andreae and D.~A. Andreae.
-\newblock Regional anaesthesia to prevent chronic pain after surgery: a
-  Cochrane systematic review and meta-analysis.
-\newblock {\em Br J Anaesth}, 111(5):711--720, Nov 2013. PMCID: PMC3793661.
+\bibitem{Song2012}
+F.~Song, A.~Clark, M.~O. Bachmann, and J.~Maas.
+\newblock Simulation evaluation of statistical properties of methods for
+  indirect and mixed treatment comparisons.
+\newblock {\em BMC Med Res Methodol}, 12:138, 2012. PMID: 22970794.
+
+\bibitem{Cornell2014}
+J.~E. Cornell, C.~D. Mulrow, R.~Localio, C.~B. Stack, A.~R. Meibohm,
+  E.~Guallar, and S.~N. Goodman.
+\newblock Random-effects meta-analysis of inconsistent effects: a time for
+  change.
+\newblock {\em Ann Intern Med}, 160(4):267--270, Feb 2014. PMID: 24727843.
+
+\bibitem{AndreaeJohnsonAbstract2013}
+M.~Andreae, M.~Johnson, and H.~Sacks.
+\newblock Bayesian responder meta-analysis of regional anesthesia to prevent
+  chronic pain after iliac crest bone graft harvesting.
+\newblock {\em Reg. Anesth. Pain Med.}, 38(1):77--88 (A1), 2013.
+
+\bibitem{Spiegelhalter2004bayesian}
+D.~J. Spiegelhalter, K.~R. Abrams, and J.~P. Myles.
+\newblock {\em Bayesian approaches to clinical trials and health-care
+  evaluation}, volume~13.
+\newblock John Wiley \& Sons, 2004.
 
 \bibitem{Carter2015}
 G.~M. Carter, D.~Indyk, M.~Johnson, M.~Andreae, K.~Suslov, S.~Busani,
