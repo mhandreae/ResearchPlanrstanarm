@@ -79,17 +79,34 @@ Clinical data scientists are faced with an abundance of useful electronic health
 \subsubsection*{National Anesthesia Clinical Outcomes Registry is an example of hierarchically structured health data}
 We will illustrate the clustered, nested data structure of contemporary health care delivery and electronic health data capture with the example of the National Anesthesia Clinical Outcomes Registry (NACOR), maintained by the Anesthesia Quality Institute and funded by the American Society of Anesthesiologists. 
 
-Anesthesia is an illustrative case of the how health care is increasingly electronically documented, facilitating the continuous registration of multiple simultaneous physiological and pharmacological data during critical interventions. To support billing, this electronic captured data set is jointed with surgical and anesthesia procedure codes, International Classification of Disease (ICD) codes, provider identifiers, patient perioperative risk, outcome and provider compliance assessment. Participating institutions upload this comprehensive data from their anesthesia information management systems (AIMS) directly to NACOR. NACOR contains at present over 30 million individual records of anesthesia provided; like similar databases, NACOR growing exponentially. This data mine invites health services and outcomes research.
+Anesthesia is an illustrative case of the how health care is increasingly electronically documented, facilitating the continuous registration of multiple simultaneous physiological   data and therapeutic interventions during critical interventions. To support billing, this electronically captured data set is jointed with surgical and anesthesia procedure codes, International Classification of Disease (ICD) codes, provider identifiers, patient perioperative risk, outcome and provider compliance assessment. Participating institutions upload this comprehensive file from their anesthesia information management systems (AIMS) directly to NACOR. NACOR contains at present over 30 million individual electronic records of anesthesia care provided; like similar databases, NACOR is growing exponentially. This data mine invites health services and outcomes research.
 
-The anesthetic an individual receives will depend on the procedure the patient is undergoing, but also on the local culture and indeed the individual anesthesia provider\cite{AndreaeWhite2015}; anesthesiologists may feel more or less competent to offer regional anesthesia technique or have more or less experience with a particular patient population or surgical procedure; for example provision of epidural labor anesthesia varies widely across the nation and within an institution and is predicted by socioeconomic and racial patient characteristics \cite{Rust2004,Glance2007}. 
+The particular anesthetic a given individual receives will depend on the procedure the patient is undergoing and under which service, but also on the local institutional culture and indeed the individual anesthesia provider and his or her qualifications and preferences\cite{AndreaeWhite2015}; We seek to substantiate the nested structure of outcome data in health care with two examples from (1) labor analgesia and (2) spine surgery : 
 
+(1) Anesthesiologists may feel more or less inclined or competent to offer regional anesthesia technique; provision of epidural labor anesthesia varies widely across the nation and within an institution and is predicted by socioeconomic and racial patient characteristics \cite{Rust2004,Glance2007}.
+ 
+(2) Bleeding during spine surgery is substantially less, if performed by a neurosurgeons versus by an orthopedic surgeon; while true on average, an individual gifted orthopedic surgeon may outperform the average neurosurgeon with regards to surgical blood loss.
 
+\subsection*{Bigger models for Big Data?}
+Hierarchical modeling could transform electronic health records based outcomes research, because the evident rich spatial and temporal organization of electronic health records is most realistically captured in multilevel hierarchical statistical models. However, efficient model fit and computational implementation are still difficult.  Additional depth of data (simply more units of observation) would increase power and make our clinical data analysis easier. Rather, there is more breadth to the data: more subgroups, locations, provider or time granularity than is currently being modeled, more partial, incomplete and noisy measurements that cannot easily be incorporated into standard models, more related studies available for meta-analysis\cite{Andreae2015,Andreae2012}.
 
-\subsection*{Big Models for Big Data}
+\subsubsection*{Modeling the multifaceted correlations in EHR is reflecting actual clinical practice}
+To realistically model the multifaceted correlations seen in actual clinical practice, when we fitted a regression model to investigate predictors of anesthesia quality in the NACOR database, we wanted regression coefficients to vary by provider, providers again nested by service or by hospital\cite{AndreaeWhite2015}. We needed to control for the surgical procedure type as random effect as well, with thousands of different surgical procedures performed in the NACOR population. The number of parameters to estimate grows very quickly and so do the potential interactions. Even with very large data sets, the sample size in each subgroup will shrink rapidly; estimates using least squares or maximum likelihood will become noisy and thus often become essentially useless. One solution lies in hierarchical modeling, where we estimate hyper-parameters and hyper-hyper-parameters (Figure \ref{fig:Distrogram}), to represent how lower level parameters vary across different groupings \cite{Bafumi2007}.
 
-\subsection*{Need for more complex models for EHR}
+\subsubsection*{More efficient inferences with partial pooling.}
+Inference based on partial pooling outperforms (a) the no-pooling and (b) the complete-pooling approaches, as can be shown mathematically \cite{Efron_1975} or via cross-validation \cite{Gelman2014}.  
+\begin{itemize}
 
-\subsubsection*{subsubsection on why}
+\item (a) Using the No-pooling approach, we would estimate the model for each specific subset of interest separately. But this leads to far too many sub-classifications, e.g. one model for each type of surgery, thus too small samples in any given subgroup for useful inferences, if we fully explore the complexity and granularity, the richness of the EMR data. 
+\item (b) Employing complete pooling or structural modeling constitutes the other extreme of the spectrum, but the implied hard constraints on the coefficients in different groups may lead to bias, negating the obvious known differences in the data, for example between patients undergoing tracheotomy versus cesarean section: we gloss over such detail and lose granularity. 
+\end{itemize}
+
+We choose the middle ground: for our richly organized NACOR data set, inference using partial pooling or hierarchical modeling is especially effective , because the estimate of each individual parameter is simultaneously informed by data from all the other patients in our cohort, improving inferences in particular for subgroups with sparse data. \cite{Gelman2009}. Effron explained this apparent paradox well to non-statisticians in the \href{http://www.nature.com/scientificamerican/journal/v236/n5/pdf/scientificamerican0577-119.pdf}{Scientific American} \cite{Efron_1977,Efron_1977a}. 
+
+\subsubsection*{Meta analysis}
+
+\paragraph*{Need for more complex models for EHR}
+
 
 \subsection*{Difficulty to fit complex models}
 

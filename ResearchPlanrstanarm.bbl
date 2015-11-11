@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{AndreaeWhite2015}
 M.~Andreae, R.~White, J.~Gabry, and C.~Hall.
@@ -20,18 +20,58 @@ L.~G. Glance, R.~Wissler, C.~Glantz, T.~M. Osler, D.~B. Mukamel, and A.~W.
 \newblock Racial differences in the use of epidural analgesia for labor.
 \newblock {\em Anesthesiology}, 106(1):19--25; discussion 6--8, 2007.
 
-\bibitem{Andreae2013}
-M.~H. Andreae and D.~A. Andreae.
-\newblock Regional anaesthesia to prevent chronic pain after surgery: a
-  Cochrane systematic review and meta-analysis.
-\newblock {\em Br J Anaesth}, 111(5):711--720, Nov 2013. PMCID: PMC3793661.
-
 \bibitem{Andreae2015}
 M.~H. Andreae, G.~M. Carter, N.~Shaparin, K.~Suslov, R.~J. Ellis, M.~A. Ware,
   D.~I. Abrams, H.~Prasad, B.~Wilsey, D.~Indyk, M.~Johnson, and H.~S. Sacks.
 \newblock Inhaled Cannabis for Chronic Neuropathic Pain: A Meta-analysis of
   Individual Patient Data.
 \newblock {\em J Pain}, Sep 2015. PMID: 26362106.
+
+\bibitem{Andreae2012}
+M.~H. Andreae and D.~A. Andreae.
+\newblock Local anaesthetics and regional anaesthesia for preventing chronic
+  pain after surgery.
+\newblock {\em Cochrane Database Syst Rev}, 10:CD007105, 2012. PMID: 23076930.
+
+\bibitem{Bafumi2007}
+J.~Bafumi and A.~Gelman.
+\newblock Fitting Multilevel Models When Predictors and Group Effects
+  Correlate.
+\newblock {SSRN} Scholarly Paper {ID} 1010095, Social Science Research Network,
+  Rochester, {NY}, September 2007.
+
+\bibitem{Efron_1975}
+B.~Efron and C.~Morris.
+\newblock Data analysis using Stein's estimator and its generalizations.
+\newblock {\em Journal of the American Statistical Association},
+  70(350):311--319, 1975.
+
+\bibitem{Gelman2014}
+A.~Gelman, J.~B. Carlin, H.~S. Stern, and D.~B. Rubin.
+\newblock {\em Bayesian data analysis}, volume~2.
+\newblock Taylor \& Francis, 2014.
+
+\bibitem{Gelman2009}
+A.~Gelman.
+\newblock {\em Red state, blue state, rich state, poor state: why Americans
+  vote the way they do}.
+\newblock Princeton University Press, 2009.
+
+\bibitem{Efron_1977}
+B.~Efron and C.~N. Morris.
+\newblock {\em Stein's paradox in statistics}.
+\newblock WH Freeman, 1977.
+
+\bibitem{Efron_1977a}
+B.~Efron and C.~N. Morris.
+\newblock Stein's paradox in statistics.
+\newblock {\em Scientific American}, 263(5):119--127, 1977.
+
+\bibitem{Andreae2013}
+M.~H. Andreae and D.~A. Andreae.
+\newblock Regional anaesthesia to prevent chronic pain after surgery: a
+  Cochrane systematic review and meta-analysis.
+\newblock {\em Br J Anaesth}, 111(5):711--720, Nov 2013. PMCID: PMC3793661.
 
 \bibitem{Carter2015}
 G.~M. Carter, D.~Indyk, M.~Johnson, M.~Andreae, K.~Suslov, S.~Busani,

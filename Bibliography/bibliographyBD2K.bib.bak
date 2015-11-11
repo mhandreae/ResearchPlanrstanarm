@@ -69,6 +69,33 @@
   Timestamp                = {2015.03.13}
 }
 
+@Article{AndreaeWhite2015,
+  Title                    = {Antiemetic medication as a marker of healthcare disparities in anesthesia: A Bayesian hierarchical model using the National Anesthesia Clinical Outcomes Registry},
+  Author                   = {Andreae, MH and  White, R, and  Gabry, JS and Hall, C},
+  Journal                  = {Clinical and Translational Science},
+  Year                     = {2015},
+  Number                   = {3},
+  Pages                    = {180},
+  Volume                   = {8},
+
+  Owner                    = {Micheal},
+  Timestamp                = {2015.11.11}
+}
+
+@Conference{,
+  Title                    = {Antiemetic medication as a marker of healthcare disparities in anesthesia: A Bayesian hierarchical model using the National Anesthesia Clinical Outcomes Registry
+ANTIEMETIC MEDICATION AS MARKER OF HEALTHCARE DISPARITIES IN ANESTHESIA: A BAYESIAN HIERARCHICAL MODEL USING THE NATIONAL ANESTHESIA CLINICAL ­OUTCOMES REGISTRY},
+  Author                   = {Andreae, MH and  White, R, and  Gabry, JS and Hall, C},
+  Year                     = {2015},
+  Month                    = {8: 178–258},
+  Organization             = {Clinical and Translational Science},
+
+  Doi                      = {10.1111/cts.12290},
+  Owner                    = {Micheal},
+  Timestamp                = {2015.11.11},
+  Url                      = {http://onlinelibrary.wiley.com/doi/10.1111/cts.12290/abstract}
+}
+
 @Article{Andreae2013,
   Title                    = {Regional anaesthesia to prevent chronic pain after surgery: a Cochrane systematic review and meta-analysis.},
   Author                   = {Andreae, M. H. and Andreae, D. A.},
@@ -1969,6 +1996,11 @@ J Neuroimmune Pharmacol. 2013 Mar 19.},
   Pmid                     = {24970344},
   Timestamp                = {2015.02.11},
   Url                      = {http://dx.doi.org/10.1186/cc13947}
+}
+
+@Conference{,
+  Owner                    = {Micheal},
+  Timestamp                = {2015.11.11}
 }
 
 @Article{2015,
