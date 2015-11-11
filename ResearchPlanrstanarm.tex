@@ -90,11 +90,21 @@ The particular anesthetic a given individual receives will depend on the procedu
 \subsection*{Bigger models for Big Data?}
 Hierarchical modeling could transform electronic health records based outcomes research, because the evident rich spatial and temporal organization of electronic health records is most realistically captured in multilevel hierarchical statistical models. However, efficient model fit and computational implementation are still difficult.  Additional depth of data (simply more units of observation) would increase power and make our clinical data analysis easier. Rather, there is more breadth to the data: more subgroups, locations, provider or time granularity than is currently being modeled, more partial, incomplete and noisy measurements that cannot easily be incorporated into standard models, more related studies available for meta-analysis\cite{Andreae2015,Andreae2012}.
 
+%\begin{wrapfigure}{h}{8cm} % Example figure with text wrapping around it
+% \vspace{-15pt}
+% \includegraphics[scale=0.3]{Figures/DistrogramNACOR.pdf} 
+%  \vspace{-20pt}
+% \caption{\footnotesize Distrogram to illustrate the hierarchical structure of patient trajectories in the National Anesthesia Clinical Outcomes Registry. Outcome $y_n$ for the $n^{th}$ patient is a Boolean indicator predicted by a logistic regression. We allow the patient intercept $\beta_{oi}$ to vary according to the $i^{th}$ anesthesiology provider caring for the patient. The provider level mean $\mu_i$ and within-provider variance $\sigma_i$ are modeled to vary by hospital. $x_n$ is a vector of patient level predictors, $\beta$ is a vector of regression coefficients.}
+% \vspace{-30pt}
+% \label{fig:Distrogram}
+%\end{wrapfigure}
+
 \subsubsection*{Modeling the multifaceted correlations in EHR is reflecting actual clinical practice}
 To realistically model the multifaceted correlations seen in actual clinical practice, when we fitted a regression model to investigate predictors of anesthesia quality in the NACOR database, we wanted regression coefficients to vary by provider, providers again nested by service or by hospital\cite{AndreaeWhite2015}. We needed to control for the surgical procedure type as random effect as well, with thousands of different surgical procedures performed in the NACOR population. The number of parameters to estimate grows very quickly and so do the potential interactions. Even with very large data sets, the sample size in each subgroup will shrink rapidly; estimates using least squares or maximum likelihood will become noisy and thus often become essentially useless. One solution lies in hierarchical modeling, where we estimate hyper-parameters and hyper-hyper-parameters (Figure \ref{fig:Distrogram}), to represent how lower level parameters vary across different groupings \cite{Bafumi2007}.
 
 \subsubsection*{More efficient inferences with partial pooling.}
 Inference based on partial pooling outperforms (a) the no-pooling and (b) the complete-pooling approaches, as can be shown mathematically \cite{Efron_1975} or via cross-validation \cite{Gelman2014}.  
+
 \begin{itemize}
 
 \item (a) Using the No-pooling approach, we would estimate the model for each specific subset of interest separately. But this leads to far too many sub-classifications, e.g. one model for each type of surgery, thus too small samples in any given subgroup for useful inferences, if we fully explore the complexity and granularity, the richness of the EMR data. 
