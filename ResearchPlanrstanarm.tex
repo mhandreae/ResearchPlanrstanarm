@@ -74,8 +74,19 @@ National health databases and electronic health records (EHR) are inherently clu
 
 \part*{Research Strategy}
 
-
 \section*{Significance}
+
+\subsection*{The nested structure of health care delivery and electronic health data}
+Clinical data scientists are faced with an abundance of useful electronic health data, but limitations of existing statistical inference tools constrain the scientific hypotheses they can be explore and evaluate. Electronic health related data sets are not only growing exponentially in number of units of observations or variables observed, but this growth implies increasingly complex interactions and correlations. 
+
+\subsubsection*{National Anesthesia Clinical Outcomes Registry is an example of hierarchically structured health data}
+We will illustrate the clustered, nested data structure of contemporary health care delivery and electronic health data capture with the example of the National Anesthesia Clinical Outcomes Registry (NACOR), maintained by the Anesthesia Quality Institute and funded by the American Society of Anesthesiologists. 
+
+Anesthesia is an illustrative case of the how health care is increasingly electronically documented, facilitating the continuous registration of multiple simultaneous physiological and pharmacological data during critical interventions. To support billing, this electronic captured data set is jointed with surgical and anesthesia procedure codes, International Classification of Disease (ICD) codes, provider identifiers, patient perioperative risk, outcome and provider compliance assessment. Participating institutions upload this comprehensive data from their anesthesia information management systems (AIMS) directly to NACOR. NACOR contains at present over 30 million individual records of anesthesia provided; like similar databases, NACOR growing exponentially. This data mine invites health services and outcomes research.
+
+The anesthetic an individual receives will depend on the procedure the patient is undergoing, but also on the local culture and indeed the individual anesthesia provider\cite{AndreaeWhite2015}; anesthesiologists may feel more or less competent to offer regional anesthesia technique or have more or less experience with a particular patient population or surgical procedure; for example provision of epidural labor anesthesia varies widely across the nation and within an institution and is predicted by socioeconomic and racial patient characteristics \cite{Rust2004,Glance2007}. 
+
+
 
 \subsection*{Big Models for Big Data}
 
@@ -105,7 +116,7 @@ Multidimensional statistical and computational methods for analyzing, inspecting
 \subsubsection*{Algorithm, software and prototype development and their application to biomedical data}
 Funded through several mechanisms including the National Science Foundation (NSF SES-1205516), the team submitting this proposal already developed and implemented many related algorithms and software packages and applied them to biomedical problems funded through the National Institute of Health (5R01GM074806, 5KL2TR001071). The proposed work is a direct continuation of the below described preliminary work of developing and implementing novel ground breaking algorithms for hierarchical modeling of complex data.
 
-\paragraph*{Prior work in hierarchical and complex modeling in medicine} Dr. Andreae published several systematic reviews and meta-analyses \cite{Andreae2013, Andreae2015, Carter2015}. Dr. Goodrich Dr. Hall is nationally recognized for the development and application of change point models in epidemiology and surveillance. Dr. Gong is leading an NIH funded trial to predict and improve respiratory outcomes after intubation based on real time electronic medical records.  Drs. Andreae, Goodrich and collaborators used the software prototype \textit{rstanarm} and shinystan to build a multilevel hierarchical model to investigate health care disparities and quality of anesthesia delivery in the large National Clinical Outcomes Registry maintained by the American Society of Anesthesiology. Dr. Gelman is internationally recognized as a leader in hierarchical modeling with past and present funding and publication in pharmacodynamic modeling, ...
+\paragraph*{Prior work in hierarchical and complex modeling in medicine} Dr. Andreae published several systematic reviews and meta-analyses \cite{Andreae2013, Andreae2015, Carter2015}. Drs. Andreae, Goodrich and Hall used the prototype of \textit{rstanarm} EHR based health disparities and outcomes research \cite{AndreaeWhite2015} Dr. Goodrich Dr. Hall is nationally recognized for the development and application of change point models in epidemiology and surveillance. Dr. Gong is leading an NIH funded trial to predict and improve respiratory outcomes after intubation based on real time electronic medical records.  Drs. Andreae, Goodrich and collaborators used the software prototype \textit{rstanarm} and shinystan to build a multilevel hierarchical model to investigate health care disparities and quality of anesthesia delivery in the large National Clinical Outcomes Registry maintained by the American Society of Anesthesiology. Dr. Gelman is internationally recognized as a leader in hierarchical modeling with past and present funding and publication in pharmacodynamic modeling, ...
 
 \paragraph*{Previous experience in software development} 
 The team has ample experience in the development of complex statistical software and in the visualization of model parameters, co-variance matrices and statistical data.  Drs. Goodrich and Gelman developed several widely cited and used software packages including the probabilistic programming language Stan\cite{SDT2014}, the basis for the proposed work. Dr. Goodrich and Andreae work together on the preliminary software packages shinystan and \textit{rstanarm}. Below we outline the trajectory that led to the current project proposal:

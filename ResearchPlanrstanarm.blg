@@ -1,3 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: ResearchPlanrstanarm.aux
 The style file: Bibliography/nihunsrt.bst
 Database file #1: Bibliography/bibliographyBD2K.bib
+Name 2 in "Andreae, MH and White, R, and Gabry, JS and Hall, C" has a comma at the end for entry AndreaeWhite2015
+while executing---line 987 of file Bibliography/nihunsrt.bst
+(There was 1 error message)

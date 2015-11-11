@@ -58,6 +58,7 @@
   Number                   = {1},
   Pages                    = {263--306},
   Volume                   = {41},
+
   Abstract                 = {To revise the "Clinical Practice Guidelines for the Sustained Use of Sedatives and Analgesics in the Critically Ill Adult" published in Critical Care Medicine in 2002.The American College of Critical Care Medicine assembled a 20-person, multidisciplinary, multi-institutional task force with expertise in guideline development, pain, agitation and sedation, delirium management, and associated outcomes in adult critically ill patients. The task force, divided into four subcommittees, collaborated over 6 yr in person, via teleconferences, and via electronic communication. Subcommittees were responsible for developing relevant clinical questions, using the Grading of Recommendations Assessment, Development and Evaluation method (http://www.gradeworkinggroup.org) to review, evaluate, and summarize the literature, and to develop clinical statements (descriptive) and recommendations (actionable). With the help of a professional librarian and Refworks database software, they developed a Web-based electronic database of over 19,000 references extracted from eight clinical search engines, related to pain and analgesia, agitation and sedation, delirium, and related clinical outcomes in adult ICU patients. The group also used psychometric analyses to evaluate and compare pain, agitation/sedation, and delirium assessment tools. All task force members were allowed to review the literature supporting each statement and recommendation and provided feedback to the subcommittees. Group consensus was achieved for all statements and recommendations using the nominal group technique and the modified Delphi method, with anonymous voting by all task force members using E-Survey (http://www.esurvey.com). All voting was completed in December 2010. Relevant studies published after this date and prior to publication of these guidelines were referenced in the text. The quality of evidence for each statement and recommendation was ranked as high (A), moderate (B), or low/very low (C). The strength of recommendations was ranked as strong (1) or weak (2), and either in favor of (+) or against (-) an intervention. A strong recommendation (either for or against) indicated that the intervention's desirable effects either clearly outweighed its undesirable effects (risks, burdens, and costs) or it did not. For all strong recommendations, the phrase "We recommend …" is used throughout. A weak recommendation, either for or against an intervention, indicated that the trade-off between desirable and undesirable effects was less clear. For all weak recommendations, the phrase "We suggest …" is used throughout. In the absence of sufficient evidence, or when group consensus could not be achieved, no recommendation (0) was made. Consensus based on expert opinion was not used as a substitute for a lack of evidence. A consistent method for addressing potential conflict of interest was followed if task force members were coauthors of related research. The development of this guideline was independent of any industry funding.These guidelines provide a roadmap for developing integrated, evidence-based, and patient-centered protocols for preventing and treating pain, agitation, and delirium in critically ill patients.},
   Institution              = {VA Palo Alto Health Care System, Palo Alto, and Stanford University School of Medicine, Stanford, CA, USA. barrj@stanford.edu},
   Keywords                 = {Adult; Clinical Protocols; Critical Illness; Delirium, diagnosis/therapy; Humans; Hypnotics and Sedatives, adverse effects/pharmacology/therapeutic use; Intensive Care Units; Pain Management, methods; Pain Measurement, methods; Psychomotor Agitation, diagnosis/therapy; Risk Assessment, methods; United States},
@@ -78,6 +79,7 @@
   Number                   = {5},
   Pages                    = {711--720},
   Volume                   = {111},
+
   Abstract                 = {Regional anaesthesia may reduce the risk of persistent (chronic) pain after surgery, a frequent and debilitating condition. We compared regional anaesthesia vs conventional analgesia for the prevention of persistent postoperative pain (PPP).We searched the Cochrane Central Register of Controlled Trials, PubMed, EMBASE, and CINAHL from their inception to May 2012, limiting the results to randomized, controlled, clinical trials (RCTs), supplemented by a hand search in conference proceedings. We included RCTs comparing regional vs conventional analgesia with a pain outcome at 6 or 12 months. The two authors independently assessed methodological quality and extracted data. We report odds ratios (ORs) with 95\% confidence intervals (CIs) as our summary statistic based on random-effects models. We grouped studies according to surgical interventions.We identified 23 RCTs. We pooled data from 250 participants in three trials after thoracotomy with outcomes at 6 months. Data favoured epidural anaesthesia for the prevention of PPP with an OR of 0.33 (95\% CI 0.20-0.56). We pooled two studies investigating paravertebral block for breast cancer surgery; pooled data of 89 participants with outcomes at 6 months favoured paravertebral block with an OR of 0.37 (95\% CI 0.14-0.94). Adverse effects were reported sparsely.Epidural anaesthesia and paravertebral block, respectively, may prevent PPP after thoracotomy and breast cancer surgery in about one out of every four to five patients treated. Small numbers, performance bias, attrition, and incomplete outcome data especially at 12 months weaken our conclusions.},
   Doi                      = {10.1093/bja/aet213},
   Institution              = {Department of Anesthesiology, Montefiore Medical Center, Albert Einstein College of Medicine, New York, NY, USA.},
@@ -119,6 +121,7 @@
   Year                     = {2015},
 
   Month                    = {Sep},
+
   Abstract                 = {Chronic neuropathic pain, the most frequent condition affecting the peripheral nervous system, remains underdiagnosed and difficult to treat. Inhaled cannabis may alleviate chronic neuropathic pain. Our objective was to synthesize the evidence on the use of inhaled cannabis for chronic neuropathic pain. We performed a systematic review and a meta-analysis of individual patient data. We registered our protocol with PROSPERO CRD42011001182. We searched in Cochrane Central, PubMed, EMBASE, and AMED. We considered all randomized controlled trials investigating chronic painful neuropathy and comparing inhaled cannabis with placebo. We pooled treatment effects following a hierarchical random-effects Bayesian responder model for the population-averaged subject-specific effect. Our evidence synthesis of individual patient data from 178 participants with 405 observed responses in 5 randomized controlled trials following patients for days to weeks provides evidence that inhaled cannabis results in short-term reductions in chronic neuropathic pain for 1 in every 5 to 6 patients treated (number needed to treat = 5.6 with a Bayesian 95\% credible interval ranging between 3.4 and 14). Our inferences were insensitive to model assumptions, priors, and parameter choices. We caution that the small number of studies and participants, the short follow-up, shortcomings in allocation concealment, and considerable attrition limit the conclusions that can be drawn from the review. The Bayes factor is 332, corresponding to a posterior probability of effect of 99.7\%.This novel Bayesian meta-analysis of individual patient data from 5 randomized trials suggests that inhaled cannabis may provide short-term relief for 1 in 5 to 6 patients with neuropathic pain. Pragmatic trials are need to evaluate the long-term benefits and risks of this treatment.},
   Doi                      = {10.1016/j.jpain.2015.07.009},
   Institution              = {Icahn School of Medicine at Mount Sinai, New York, New York.},
@@ -327,9 +330,9 @@
 }
 
 @Misc{Creativecommonsorg2015,
-  Title                    = {{Creative Commons — Attribution-ShareAlike 4.0 International— CC BY-SA 4.0}},
+  Title                    = {Creative Commons - Attribution-ShareAlike 4.0 International - CC BY-SA 4.0},
 
-  Author                   = {{Creativecommons}},
+  Author                   = {{Creativecommons.org}},
   Year                     = {2015},
 
   Owner                    = {Micheal},
@@ -773,6 +776,36 @@
   Url                      = {http://dx.doi.org/10.1016/S0140-6736(08)60105-1}
 }
 
+@Article{Glance2007,
+  Title                    = {Racial differences in the use of epidural analgesia for labor},
+  Author                   = {Glance, L. G. and Wissler, R. and Glantz, C. and Osler, T. M. and Mukamel, D. B. and Dick, A. W.},
+  Journal                  = {Anesthesiology},
+  Year                     = {2007},
+  Number                   = {1},
+  Pages                    = {19-25; discussion 6-8},
+  Volume                   = {106},
+
+  Doi                      = {00000542-200701000-00008 [pii]},
+  ISSN                     = {0003-3022 (Print)
+0003-3022 (Linking)},
+  Keywords                 = {Adult
+African Continental Ancestry Group/statistics & numerical data
+Analgesia, Epidural/*statistics & numerical data
+Analgesia, Obstetrical/*statistics & numerical data
+Asian Continental Ancestry Group/statistics & numerical data
+Continental Population Groups/*statistics & numerical data
+European Continental Ancestry Group/statistics & numerical data
+Female
+Hispanic Americans/statistics & numerical data
+Humans
+Multivariate Analysis
+Pregnancy},
+  Owner                    = {Micheal},
+  Timestamp                = {2015.11.11},
+  Type                     = {Journal Article},
+  Url                      = {http://www.ncbi.nlm.nih.gov/pubmed/17197841}
+}
+
 @Article{Glasgow2007,
   Title                    = {How can we increase translation of research into practice? Types of evidence needed.},
   Author                   = {Glasgow, Russell E. and Emmons, Karen M.},
@@ -1035,6 +1068,7 @@
   Number                   = {12},
   Pages                    = {919--924},
   Volume                   = {12},
+
   Abstract                 = {Mortality from severe sepsis and septic shock differs across continents, countries, and regions. We aimed to use data from the Surviving Sepsis Campaign (SSC) to compare models of care and outcomes for patients with severe sepsis and septic shock in the USA and Europe.The SSC was introduced into more than 200 sites in Europe and the USA. All patients identified with severe sepsis and septic shock in emergency departments or hospital wards and admitted to intensive care units (ICUs), and those with sepsis in ICUs were entered into the SSC database. Patients entered into the database from its launch in January, 2005, through January, 2010, in units with at least 20 patients and 3 months of enrolment of patients were included in this analysis. Patients included in the cohort were limited to those entered in the first 4 years at every site. We used random-effects logistic regression to estimate the hospital mortality odds ratio (OR) for Europe relative to the USA. We used random-effects linear regression to find the relation between lengths of stay in hospital and ICU and geographic region.25 375 patients were included in the cohort. The USA included 107 sites with 18 766 (74\%) patients, and Europe included 79 hospital sites with 6609 (26\%) patients. In the USA, 12 218 (65·1\%) were admitted to the ICU from the emergency department whereas in Europe, 3405 (51·5\%) were admitted from the wards. The median stay on the hospital wards before ICU admission was longer in Europe than in the USA (1·0 vs 0·1 days, difference 0·9, 95\% CI 0·8-0·9). Raw hospital mortality was higher in Europe than in the USA (41·1\%vs 28·3\%, difference 12·8, 95\% CI 11·5-14·7). The median length of stay in ICU (7·8 vs 4·2 days, 3·6, 3·3-3·7) and hospital (22·8 vs 10·5 days, 12·3, 11·9-12·8) was longer in Europe than in the USA. Adjusted mortality in Europe was not significantly higher than that in the USA (32·3\%vs 31·3\%, 1·0, -1·7 to 3·7, p=0·468). Complete compliance with all applicable elements of the sepsis resuscitation bundle was higher in the USA than in Europe (21·6\%vs 18·4\%, 3·2, 2·2-4·4).The significant difference in unadjusted mortality and the fact that this difference disappears with severity adjustment raise important questions about the effect of the approach to critical care in Europe compared with that in the USA. The effect of ICU bed availability on outcomes in patients with severe sepsis and septic shock requires further investigation.},
   Doi                      = {10.1016/S1473-3099(12)70239-6},
   Institution              = {Division of Pulmonary and Critical Care Medicine, Warren Alpert Medical School of Brown University, Providence, RI 02906, USA. mitchell_levy@brown.edu},
@@ -1418,6 +1452,43 @@
   Timestamp                = {2015.02.07}
 }
 
+@Article{Rust2004,
+  Title                    = {Racial and ethnic disparities in the provision of epidural analgesia to Georgia Medicaid beneficiaries during labor and delivery},
+  Author                   = {Rust, G. and Nembhard, W. N. and Nichols, M. and Omole, F. and Minor, P. and Barosso, G. and Mayberry, R.},
+  Journal                  = {Am J Obstet Gynecol},
+  Year                     = {2004},
+  Number                   = {2},
+  Pages                    = {456-62},
+  Volume                   = {191},
+
+  Doi                      = {10.1016/j.ajog.2004.03.005
+S0002937804002340 [pii]},
+  ISSN                     = {0002-9378 (Print)
+0002-9378 (Linking)},
+  Keywords                 = {Adolescent
+Adult
+African Americans/statistics & numerical data
+Analgesia, Epidural/*statistics & numerical data
+Analgesia, Obstetrical/*statistics & numerical data
+Asian Americans/statistics & numerical data
+Delivery, Obstetric
+Ethnic Groups/*statistics & numerical data
+European Continental Ancestry Group/statistics & numerical data
+Female
+Georgia
+Hispanic Americans/statistics & numerical data
+Humans
+Labor, Obstetric
+Logistic Models
+Medicaid/*statistics & numerical data
+Odds Ratio
+Pregnancy},
+  Owner                    = {Micheal},
+  Timestamp                = {2015.11.11},
+  Type                     = {Journal Article},
+  Url                      = {http://www.ncbi.nlm.nih.gov/pubmed/15343221}
+}
+
 @Article{Ryynaenen2013,
   Title                    = {Bayesian predictors of very poor health related quality of life and mortality in patients with COPD.},
   Author                   = {Ryyn{\"{a}}nen, Olli-Pekka and Soini, Erkki J. and Lindqvist, Ari and Kilpel{\"{a}}inen, Maritta and Laitinen, Tarja},
@@ -1492,6 +1563,21 @@
   Pmid                     = {22824225},
   Timestamp                = {2015.02.26},
   Url                      = {http://dx.doi.org/10.1186/1471-2288-12-101}
+}
+
+@Article{Shaparin2014,
+  Title                    = {{A longitudinal linear model of patient characteristics to predict failure to attend an inner-city chronic pain clinic.}},
+  Author                   = {Shaparin, Naum and White, Robert and Andreae, Michael and Hall, Charles and Kaufman, Andrew},
+  Journal                  = {The journal of pain : official journal of the American Pain Society},
+  Year                     = {2014},
+
+  Abstract                 = {UNLABELLED: Patients often fail to attend appointments in chronic pain clinics for unknown reasons. We hypothesized that certain patient characteristics predict failure to attend scheduled appointments, pointing to systematic barriers to accessing chronic pain services for certain underserved populations. We collected retrospective data from a longitudinal observational cohort of patients at an academic pain clinic in Newark, New Jersey. To examine the effect of demographic factors on appointment status, we fit a marginal logistic regression using generalized estimating equations with exchangeable correlation. A total of 1,394 patients with 3,488 total encounters between January 1, 2006, and December 31, 2009, were included. Spanish spoken as a primary language (alternatively Hispanic or other race) and living between 5 and 10 miles from the clinic were associated with reduced odds of arriving for an appointment; making an appointment for a particular complaint such as cancer pain or back pain, an interventional pain procedure scheduled in connection with the appointment, unemployed status, and continuity of care (as measured by office visit number) were associated with increased odds of arriving. Spanish spoken as a primary language and distance to the pain clinic predicted failure to attend a scheduled appointment in our cohort. If these constitute systematic barriers to access, they may be amenable to targeted interventions.$\backslash$n$\backslash$nPERSPECTIVE: We identified certain patient characteristics, specifically Spanish spoken as a primary language and geographic distance from the clinic, that predict failure to attend an inner-city chronic pain clinic. These identified barriers to accessing chronic pain services may be modifiable by simple cost-effective interventions.},
+  Doi                      = {10.1016/j.jpain.2014.03.004},
+  ISSN                     = {1528-8447},
+  Keywords                 = {Health care disparities,Hispanic Americans,appointments and schedules,chronic pain,logistic models},
+  Owner                    = {Micheal},
+  Pmid                     = {24747766},
+  Timestamp                = {2015.11.11}
 }
 
 @Misc{Team2015,
