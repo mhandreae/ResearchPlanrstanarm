@@ -79,16 +79,16 @@ Clinical data scientists are faced with an abundance of useful electronic health
 \subsubsection*{National Anesthesia Clinical Outcomes Registry is an example of hierarchically structured health data}
 We will illustrate the clustered, nested data structure of contemporary health care delivery and electronic health data capture with the example of the National Anesthesia Clinical Outcomes Registry (NACOR), maintained by the Anesthesia Quality Institute and funded by the American Society of Anesthesiologists. 
 
-\paragraph*{Perioperative health care delivery and data capture are nested and clustered.}
+\subsubsection*{Perioperative health care delivery and data capture are nested and clustered.}
 Anesthesia is an illustrative case of the how health care is increasingly electronically documented, facilitating the continuous registration of multiple simultaneous physiological   data and therapeutic interventions during critical interventions. To support billing, this electronically captured data set is jointed with surgical and anesthesia procedure codes, International Classification of Disease (ICD) codes, provider identifiers, patient perioperative risk, outcome and provider compliance assessment. Participating institutions upload this comprehensive file from their anesthesia information management systems (AIMS) directly to NACOR. NACOR contains at present over 30 million individual electronic records of anesthesia care provided; like similar databases, NACOR is growing exponentially. This data mine invites health services and outcomes research.
 
-\paragraph*{Care delivered is contingent on correlated procedure, providers and patient characteristics.} To illustrate, the particular anesthetic a given individual receives will depend on the procedure the patient is undergoing and under which service, but also on the local institutional culture and indeed the individual anesthesia provider and his or her qualifications and preferences\cite{AndreaeWhite2015}; We seek to substantiate the nested structure of outcome data in health care with two examples from (1) labor analgesia and (2) spine surgery : 
+\subsubsection*{Care delivered and outcomes achieved depend on procedure, providers and patient characteristics.} For example, the particular anesthetic a given individual receives will depend on the surgical procedure the patient is undergoing and under which service, but also on the local institutional culture and indeed the individual anesthesia provider and his or her qualifications and preferences\cite{AndreaeWhite2015}; We seek to substantiate the nested structure of outcome data in health care with two examples from (1) labor analgesia and (2) spine surgery : 
 
-(1) Anesthesiologists may feel more or less inclined or competent to offer regional anesthesia technique; provision of epidural labor anesthesia varies widely across the nation and within an institution and is predicted by socioeconomic and racial patient characteristics \cite{Rust2004,Glance2007}.
+(1) Anesthesiologists may feel more or less inclined or competent to offer regional anesthesia techniques; provision of epidural labor anesthesia varies widely across the nation and within an institution and is predicted by socioeconomic and racial patient characteristics \cite{Rust2004,Glance2007}.
  
 (2) Bleeding during spine surgery is substantially less, if performed by a neurosurgeons versus by an orthopedic surgeon; while true on average, an individual gifted orthopedic surgeon may outperform the average neurosurgeon with regards to surgical blood loss.
 
-\subsection*{Bigger models for Big Data?}
+\subsection*{Hierarchical models capture contemporary health care practice realistically}
 Hierarchical modeling could transform electronic health records based outcomes research, because the evident rich spatial and temporal organization of electronic health records is most realistically captured in multilevel hierarchical statistical models. However, efficient model fit and computational implementation are still difficult.  Additional depth of data (simply more units of observation) would increase power and make our clinical data analysis easier. Rather, there is more breadth to the data: more subgroups, locations, provider or time granularity than is currently being modeled, more partial, incomplete and noisy measurements that cannot easily be incorporated into standard models, more related studies available for meta-analysis\cite{Andreae2015,Andreae2012}.
 
 %\begin{wrapfigure}{h}{8cm} % Example figure with text wrapping around it
@@ -103,8 +103,8 @@ Hierarchical modeling could transform electronic health records based outcomes r
 \subsubsection*{Modeling the multifaceted correlations in EHR is reflecting actual clinical practice}
 To realistically model the multifaceted correlations seen in actual clinical practice, when we fitted a regression model to investigate predictors of anesthesia quality in the NACOR database, we wanted regression coefficients to vary by provider, providers again nested by service or by hospital\cite{AndreaeWhite2015}. We needed to control for the surgical procedure type as random effect as well, with thousands of different surgical procedures performed in the NACOR population. The number of parameters to estimate grows very quickly and so do the potential interactions. Even with very large data sets, the sample size in each subgroup will shrink rapidly; estimates using least squares or maximum likelihood will become noisy and thus often become essentially useless. One solution lies in hierarchical modeling, where we estimate hyper-parameters and hyper-hyper-parameters (Figure \ref{fig:DistrogramNACOR}), to represent how lower level parameters vary across different groupings \cite{Bafumi2007}.
 
-\subsubsection*{More efficient inferences with partial pooling.}
-Inference based on partial pooling outperforms (a) the no-pooling and (b) the complete-pooling approaches, as can be shown mathematically \cite{Efron_1975} or via cross-validation \cite{Gelman2014}.  
+\subsubsection*{Hierarchical models provide efficient inferences with partial pooling}
+Inference based on partial pooling outperforms (a) the No-pooling and (b) the complete-pooling approaches, as can be shown mathematically \cite{Efron_1975} or via cross-validation \cite{Gelman2014}.  
 
 \begin{itemize}
 
@@ -114,12 +114,30 @@ Inference based on partial pooling outperforms (a) the no-pooling and (b) the co
 
 We choose the middle ground: for our richly organized NACOR data set, inference using partial pooling or hierarchical modeling is especially effective , because the estimate of each individual parameter is simultaneously informed by data from all the other patients in our cohort, improving inferences in particular for subgroups with sparse data. \cite{Gelman2009}. Effron explained this apparent paradox well to non-statisticians in the \href{http://www.nature.com/scientificamerican/journal/v236/n5/pdf/scientificamerican0577-119.pdf}{Scientific American} \cite{Efron_1977,Efron_1977a}. 
 
-\subsubsection*{Meta-analysis is pooling hierarchically structured outcome data for evidence based clinical care}
+\subsection*{Meta-analysis for evidence based clinical care}
 
-Clinicians are familiar with systematic reviews and meta-analysis\cite{Sackett1996}. Evidence synthesis (a more accurate term than meta-analysis) is a powerful tool to pool clinical trials to guide evidence based clinical care \cite{Ashby2000}. Rigorous evidence synthesis is considered the highest level of evidence to support clinical decision making \cite{Cook1997}. However, long-term studies on perioperative outcomes tend to vary in design and reported outcomes\cite{Andreae2013}, making evidence synthesis challenging with classical or frequentist statistical models\cite{Spiegelhalter2000}. The integration of dichotomous outcomes with continuous outcomes often requires access to individual patient data, rarely available for evidence synthesis\cite{Andreae2015}. Outcomes recorded at different intervals in different studies or repeated measures can lead to unit of analysis problems--concerns about counting data twice. Meta-regression of effect dose dependence can explain substantial between-study variance in outcomes reported to reconcile study findings \cite{Andreae2015,Thompson2002}. Different study designs can make it difficult to perform meta-analysis or meta-regression with classical statistical methods and standard systematic review software \cite{Deeks2011chapter}. Classical meta-analysis may also underestimate the between-study-variability for small numbers of trials\cite{Song2012,Cornell2014}.
+Clinicians are familiar with systematic reviews and meta-analysis\cite{Sackett1996}. Evidence synthesis (a more accurate term than meta-analysis) is a powerful tool to pool clinical trials to guide evidence based clinical care \cite{Ashby2000}. Rigorous evidence synthesis is considered the highest level of evidence to support clinical decision making \cite{Cook1997}. However, studies on perioperative outcomes tend to vary in design and reported outcomes\cite{Andreae2013}, making evidence synthesis challenging with classical or frequentist statistical models\cite{Spiegelhalter2000}; not least, because often only dichotomous aggregate results are reported CITE ROTH THESIS.  The integration of dichotomous outcomes with continuous outcomes often requires access to individual patient data, rarely available for evidence synthesis\cite{Andreae2015}. Meta-regression of effect dose dependence can explain substantial between-study variance in outcomes reported to reconcile study findings \cite{Andreae2015,Thompson2002,Abroug2011}. Different study designs can make it difficult to perform meta-analysis or meta-regression with classical statistical methods and standard systematic review software \cite{Deeks2011chapter}. Classical meta-analysis may also underestimate the between-study-variability for small numbers of trials\cite{Song2012,Cornell2014}.
 
-Hierarchical models may be a useful tool to pool heterogeneous perioperative outcome data from long-term studies with varied design to better inform clinical decisions\cite{AndreaeJohnsonAbstract2013,Spiegelhalter2004bayesian}. We build a multi-level hierarchical model to pool individual patient data with continuous and dichotomous aggregate study level data, clustered at the study level by followup interval and at the study level by surgical intervention performed (Figure \ref{fig:DistrogramMetaAnalysis}).
+\subsubsection*{The antimony of complete versus no-pooling also limits meta-analysis of perioperative outcomes}
 
+Perioperative outcomes are often recorded at different follow intervals in different studies; some studies report repeated measures, others only a single terminal observation; This leads to the same issue of (a) complete pooling versus (b) No-pooling also in evidence synthesis CITE ROTH.
+
+\begin{itemize}
+
+\item (a) Complete pooling irrespective of follow up-time.
+Evidence synthesis of all effect estimates at different time points is only appropriate if the effect estimates does not depend on when it was observed. This is obviously often untenable assumption.
+
+\item (b) No-pooling, but conducting meta-analyses at each time point: performing separate meta-analysis for each follow up time point separately, would drastically reduce sample size and hence power and precision, undermining the main strength of meta-analysis.
+
+\end{itemize}
+
+Besides clustering by reported time endpoint, there are other forms of ecological bias or clusters to be considered in meta-analysis; for example outcomes are related in patients undergoing similar surgical procedures or in certain geographic or historical settings  \cite{Abroug2011,Andreae2013,Andreae2015}. The same antimony of complete pooling versus no-pooling limits meta-analysis for perioperative outcomes and hinders evidence based medicine.
+
+ this can lead to unit of analysis problems--concerns about counting data twice. 
+
+\subsubsection*{Partial pooling improves evidence synthesis of studies with variable follow up intervals and endpoints}
+ 
+Hierarchical models may be a useful tool to pool heterogeneous perioperative outcome data from long-term studies with varied design to better inform clinical decisions\cite{AndreaeJohnsonAbstract2013,Spiegelhalter2004bayesian}; but complex multilevel models can be difficult to fit with standard software. We build a multilevel hierarchical model to pool individual patient data with continuous and dichotomous aggregate study level data, clustered at the study level by followup interval and at the study level by surgical intervention performed (Figure \ref{fig:DistrogramMetaAnalysis}).
 
 
 \subsection*{Need for complex models to reflect the structured clustered healthcare deliv}
