@@ -20,9 +20,15 @@
 \usepackage{graphicx} % Required for including images
 \usepackage{booktabs} % Top and bottom rules for tables
 \usepackage{wrapfig} % Allows in-line images
-\usepackage[labelfont=footnotesize]{caption} % Make figure numbering in captions bold
+%\usepackage[labelfont=\small]{caption} % Make figure numbering in captions bold
 \usepackage[top=0.6in,bottom=0.6in,left=0.6in,right=0.6in]{geometry} % Reduce the size of the margin
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 \pagestyle{empty} % Remove page numbers
+%\let\oldtabular\tabular 
+%\renewcommand{\tabular}{\large\oldtabular}
 
 \hyphenation{ionto-pho-re-tic iso-tro-pic fortran} % Specifies custom hyphenation points for words or words that shouldn't be hyphenated at all
 
@@ -237,21 +243,26 @@ Any documentation is released under the same license as Wikipedia, the Creative 
 \subsection*{Potential problems}
 \subsection*{Timeline}
 
-
-
-
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
 \begin{table}[]
+\centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{llllll}
-\hline
-            & Year 1                             & Year 2                  & Year 3                       & Year 4             & Year 5       \\ \hline
-Stan GLM    & meta-analysis                      & 3-4 level models        & \multicolumn{2}{l}{semi- and parametric survival} & change point \\
-Shinystan   & Binary posterior predictive check & dependence plot         & tree depth plot              &                    &              \\
-New Methods & Dependence plot                    & Multilevel model priors &                              &                    &              \\ \hline
+\begin{tabular}{@{}|c|c|c|c|@{}}
+\toprule
+\textbf{Year} & \textbf{rstanarm} & \textbf{methodological innovations} & \textbf{shinystan} \\ \midrule
+\textbf{First} & \multicolumn{3}{c|}{organize project team, submit rstanarm package to CRAN, start online user group, disseminate rstanarm and revamp shinystan} \\ \midrule
+\textbf{Second} & add additional levels to rstanarm generalized linar model, implement basic meta-analysis functions & \multicolumn{2}{c|}{develop dependence plot, posterior predictive checking and other new visual tools for graphical exploration of model convergence and model fit} \\ \midrule
+\textbf{Third} & \multicolumn{2}{c|}{develop and implement flexible multilevel meta-analysis functions} &  \\ \midrule
+\textbf{Forth} & \multicolumn{2}{c|}{develop and implement basic missing data integration, start implementing advanced multilevel change point models} &  \\ \midrule
+\textbf{Fifth} & scale missing data integration to larger datasets &  &  \\ \bottomrule
 \end{tabular}
 }
-\caption{Timeline: The above timeline outlines our targets and milestones over the five year grant period.}
-\label{Timeline}
+
+\caption{The above time line delineates the planned project progress by year. After setting up the project team in the first year and submitting the rstanarm package to CRAN, in year two and three, we will sequentially add additional model level to existing functions and start to develop new functions for meta-analysis and change point models, scaling also these to multilevel models. In the forth project year, we will begin to integrate missing data algorithms into rstanarm and finally scale the packages to large dataset in year five.  }
+
+\label{my-label}
 \end{table}
 
 \subsection*{test}
