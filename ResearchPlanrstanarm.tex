@@ -161,19 +161,33 @@ Hierarchical models may be a useful tool to pool heterogeneous perioperative out
 
 \section*{Innovation}
 
-\subsection*{Advanced hierarchical modeling for EHR should be accessible}
+$rstanarm$ and $sinystan$ will address the dearth of accessible software to build complex multilevel hierarchical models, assess and troubleshoot model convergence, confirm congruence of model and data and improve statistical inference. In the process, we will advance statistical methods and algorithms for convergence diagnostics and integrate missing data imputation with advanced hierarchical modeling in a single software package.  
+
+\subsection*{Accessible advanced hierarchical modeling for EHR}
 
 While there are simple and accessible software packages to implement basic hierarchical models both in the frequentistist and the Bayesian paradigm, multilevel modeling is restricted to data scientist and statisticians with advanced computational and statistical expertise. Even for these, the step learning curve of advanced probabilistic programming languages like Stan constitutes a significant barrier to harness the full potential of hierarchical modeling for electronic health records based outcomes research.
 
 $rstanarm$ is the first very simple and accessible, yet ultra-fast and flexible package to allow even very advanced hierarchical modeling for large data sets. It is open source, and free to the public and our project will make analysis reproducible and reliable enough even for federal regulatory processes. 
 
-\subsection*{Advanced hierarchical modeling for EHR must be fast and flexible to be useful}
+\subsection*{Fast and flexible hierarchical modeling for realistic EHR outcomes research }
 
 Even for the initiated and sophisticated data scientist able to writing complex code to implement complex multilevel models for Big Data, the process of sequential model building and testing is cumbersome and slow. The complexity of programming long convoluted code makes the process error prone. Typically scientist have to explore and compare different angles and approaches to modeling large EHR data sets. Typically researchers need to update and tweak the model to make it more and more complex, to fit the data better or to facilitate convergence of the algorithm. With existing software, like OpenBugs or Jags building and updating hierarchical models sequentially for large data sets becomes prohibitively expensive in computer resources or too slow to be feasible. The challenges of fast and flexible computational implementation such limit the model sophistication;  researchers cannot fit multilevel models which reflect the actual hierarchical structure of clinical care delivered. 
 
 $rstanarm$ is based on the Hamiltonian Monte Carlo algorithm implemented in Stan, which is orders of magnitude faster than existing MCMC algorithms. $rstanarms$ simple yet flexible function calls facilitate dynamic model building and updating, and allows the fitting and testing of complex models even for larger datasets. $rstanarm$ allows researchers to fit the model they believe to best reflect the clinical question they are investigating with EHR.
 
-\subsection*{Exploration of hierarchical model output and convergence diagnostics should be refined} 
+\subsection*{Improve tools for graphical exploration of hierarchical models and MCMC output}
+
+Accessible tools and utilities, new visual methods to explore sophisticated model and their output would accelerate the model development, reduce modeling errors and fascinates inferential reasoning. $shinystan$ will fill in the void where there is currently a dearth of conceptual approaches, tools and utilities to analyze the very large data generated with Marcov Monte Carlo simulations themselves. $shinystan$ will provide powerful and easily accessible tools for posterior predictive checks to improve congruence of the fitted model with observed data. 
+ 
+\subsection*{Advanced, refined and accessible model convergence diagnostics to enhance model building} 
+
+If a complex model fails to converge, knowing why is crucial to troubleshooting. $shinystan$ is already unmatched in combining ease of interactive graphical exploration with sophisticated graphical rendering to explore visually and parameter specific co-linearity, auto correlation, tree depth of Hamiltonian Monte Carlo algorithms and many other convergence diagnostics. We will not only further develop $shinystan$ to make it more robust, scale it to work faster also for larger data sets; beyond, we will develop novel graphical methods to assess model convergence and define and refined algorithms to troubleshoot model convergence with a special focus on multilevel hierarchical modeling. 
+
+\subsection*{Integrate missing data imputation with hierarchical modeling to advance outcomes research}
+
+One major limitation of EHR based outcomes research is imprecise or missing data. We will integrate multiple imputation with advanced hierarchical modeling in $rstanarm$ to facilitate the use of multilevel models for large clinical data sets. We will integrate of both approaches, multiple imputation of missing data with advanced ultra fast complex hierarchical modeling in (a) compatible unified software package(s). This will open a new dimension to clinical data scientist, who were hitherto limited either to complete case analysis if they wanted to use complex multilevel models or to simple models if they utilized multiple imputation of missing data; both with tremendous shortcomings. 
+
+$rstanarm$ and $shiystan$ innovation is in also process integration. They will allow clinical scientists to impute missing data from EHR, build and troubleshoot realistic hierarchical multilevel models and explore and analyze the output and results graphically and interactively. 
 
 \section*{Approach}
 This project (software development and dissemination) will be guided by our multidisciplinary project team. The team will conduct its work through regularly scheduled weekly meetings, and continued online collaboration via Github and email. 
