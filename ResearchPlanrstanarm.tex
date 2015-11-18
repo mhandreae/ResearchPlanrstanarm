@@ -157,11 +157,23 @@ Hierarchical models may be a useful tool to pool heterogeneous perioperative out
 
 \subsection*{Stan is flexible and fast}
 
-\subsection*{Modeling should be accessible}
+
 
 \section*{Innovation}
 
-\subsection*{H MC Algorithm is faster}
+\subsection*{Advanced hierarchical modeling for EHR should be accessible}
+
+While there are simple and accessible software packages to implement basic hierarchical models both in the frequentistist and the Bayesian paradigm, multilevel modeling is restricted to data scientist and statisticians with advanced computational and statistical expertise. Even for these, the step learning curve of advanced probabilistic programming languages like Stan constitutes a significant barrier to harness the full potential of hierarchical modeling for electronic health records based outcomes research.
+
+$rstanarm$ is the first very simple and accessible, yet ultra-fast and flexible package to allow even very advanced hierarchical modeling for large data sets. It is open source, and free to the public and our project will make analysis reproducible and reliable enough even for federal regulatory processes. 
+
+\subsection*{Advanced hierarchical modeling for EHR must be fast and flexible to be useful}
+
+Even for the initiated and sophisticated data scientist able to writing complex code to implement complex multilevel models for Big Data, the process of sequential model building and testing is cumbersome and slow. The complexity of programming long convoluted code makes the process error prone. Typically scientist have to explore and compare different angles and approaches to modeling large EHR data sets. Typically researchers need to update and tweak the model to make it more and more complex, to fit the data better or to facilitate convergence of the algorithm. With existing software, like OpenBugs or Jags building and updating hierarchical models sequentially for large data sets becomes prohibitively expensive in computer resources or too slow to be feasible. The challenges of fast and flexible computational implementation such limit the model sophistication;  researchers cannot fit multilevel models which reflect the actual hierarchical structure of clinical care delivered. 
+
+$rstanarm$ is based on the Hamiltonian Monte Carlo algorithm implemented in Stan, which is orders of magnitude faster than existing MCMC algorithms. $rstanarms$ simple yet flexible function calls facilitate dynamic model building and updating, and allows the fitting and testing of complex models even for larger datasets. $rstanarm$ allows researchers to fit the model they believe to best reflect the clinical question they are investigating with EHR.
+
+\subsection*{Exploration of hierarchical model output and convergence diagnostics should be refined} 
 
 \section*{Approach}
 This project (software development and dissemination) will be guided by our multidisciplinary project team. The team will conduct its work through regularly scheduled weekly meetings, and continued online collaboration via Github and email. 
