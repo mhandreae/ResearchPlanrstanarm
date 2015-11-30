@@ -122,11 +122,11 @@ We choose the middle ground: for our richly organized NACOR data set, inference 
 
 \subsection*{Meta-analysis for evidence based clinical care}
 
-Clinicians are familiar with systematic reviews and meta-analysis\cite{Sackett1996}. Evidence synthesis (a more accurate term than meta-analysis) is a powerful tool to pool clinical trials to guide evidence based clinical care \cite{Ashby2000}. Rigorous evidence synthesis is considered the highest level of evidence to support clinical decision making \cite{Cook1997}. However, studies on perioperative outcomes tend to vary in design and reported outcomes\cite{Andreae2013}, making evidence synthesis challenging with classical or frequentist statistical models\cite{Spiegelhalter2000}; not least, because often only dichotomous aggregate results are reported CITE ROTH THESIS.  The integration of dichotomous outcomes with continuous outcomes often requires access to individual patient data, rarely available for evidence synthesis\cite{Andreae2015}. Meta-regression of effect dose dependence can explain substantial between-study variance in outcomes reported to reconcile study findings \cite{Andreae2015,Thompson2002,Abroug2011}. Different study designs can make it difficult to perform meta-analysis or meta-regression with classical statistical methods and standard systematic review software \cite{Deeks2011chapter}. Classical meta-analysis may also underestimate the between-study-variability for small numbers of trials\cite{Song2012,Cornell2014}.
+Clinicians are familiar with systematic reviews and meta-analysis\cite{Sackett1996}. Evidence synthesis (a more accurate term than meta-analysis) is a powerful tool to pool clinical trials to guide evidence based clinical care \cite{Ashby2000}. Rigorous evidence synthesis is considered the highest level of evidence to support clinical decision making \cite{Cook1997}. However, studies on perioperative outcomes tend to vary in design and reported outcomes\cite{Andreae2013}, making evidence synthesis challenging with classical or frequentist statistical models\cite{Spiegelhalter2000}; not least, because often only dichotomous aggregate results are reported \cite{Roth2015CriticalCare}.  The integration of dichotomous outcomes with continuous outcomes often requires access to individual patient data, rarely available for evidence synthesis\cite{Andreae2015}. Meta-regression of effect dose dependence can explain substantial between-study variance in outcomes reported to reconcile study findings \cite{Andreae2015,Thompson2002,Abroug2011}. Different study designs can make it difficult to perform meta-analysis or meta-regression with classical statistical methods and standard systematic review software \cite{Deeks2011chapter}. Classical meta-analysis may also underestimate the between-study-variability for small numbers of trials\cite{Song2012,Cornell2014}.
 
 \subsubsection*{The antimony of complete versus no-pooling also limits meta-analysis of perioperative outcomes}
 
-Perioperative outcomes are often recorded at different follow intervals in different studies; some studies report repeated measures, others only a single terminal observation; This leads to the same issue of (a) complete pooling versus (b) No-pooling also in evidence synthesis CITE ROTH.
+Perioperative outcomes are often recorded at different follow intervals in different studies; some studies report repeated measures, others only a single terminal observation; This leads to the same issue of (a) complete pooling versus (b) No-pooling also in evidence synthesis \cite{Roth2015CriticalCare}.
 
 \begin{itemize}
 
@@ -137,9 +137,9 @@ Evidence synthesis of all effect estimates at different time points is only appr
 
 \end{itemize}
 
-Besides clustering by reported time endpoint, there are other forms of ecological bias or clusters to be considered in meta-analysis; certain geographical or historical settings, similar surgical procedures or diseases will lead to correlated outcomes in patient cohorts \cite{Abroug2011,Andreae2013,Andreae2015} CITE ROTH. Such the same antimony of complete pooling versus no-pooling limits meta-analysis for perioperative outcomes and hinders evidence based medicine.
+Besides clustering by reported time endpoint, there are other forms of ecological bias or clusters to be considered in meta-analysis; certain geographical or historical settings, similar surgical procedures or diseases will lead to correlated outcomes in patient cohorts \cite{Abroug2011,Andreae2013,Andreae2015,Roth2015CriticalCare}. Such the same antimony of complete pooling versus no-pooling limits meta-analysis for perioperative outcomes and hinders evidence based medicine.
 
-Besides the effects estimates themselves, their precision, inter and within study variability may differ considerably contingent on disease, procedure or other study level characteristics \cite{Andreae2013,Andreae2015}CITE ROTH.
+Besides the effects estimates themselves, their precision, inter and within study variability may differ considerably contingent on disease, procedure or other study level characteristics \cite{Andreae2013,Andreae2015,Roth2015CriticalCare}.
 
 In addition to a possible influence on the point estimate of the measure of effect (for example a RR of 0.6 instead of 0.8), an even more important influence could be the transformation of a significant effect into a non-significant effect by changing of the confidence interval (for example a RR of 0.8 (95% CI 0.55-1.15) instead of 0.8 (0.7-0.9)). Interpretation of meta-analyses, and especially Cochrane Reviews, in clinical practice is often reduced to "shows a significant effect" vs. "shows no significant effect".
 
@@ -152,6 +152,8 @@ Hierarchical models may be a useful tool to pool heterogeneous perioperative out
 
 
 \subsection*{Need for complex models to reflect the structured clustered healthcare deliv}
+
+What mistakes are being made by omitting missing data and ignoring clustering, because variances are wrong and not MAR, model based estimators assume covariance matrix is correct which it is not. By using the empirical (robust) (weighted jagknife) the CI are correct, but this is often ignored in medical recrods research. similar to paired t test.
 
 \subsection*{Difficulty to fit complex models}
 
