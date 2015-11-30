@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.14)  24 NOV 2015 12:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.14)  30 NOV 2015 17:38
 entering extended mode
 **ResearchPlanrstanarm.tex
 
@@ -510,13 +510,12 @@ LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
 LaTeX Warning: Reference `fig:DistrogramMetaAnalysis' on page 4 undefined on in
 put line 151.
 
-[4]
+[4] [5]
 Overfull \hbox (4.99817pt too wide) in paragraph at lines 202--203
 \T1/phv/m/n/10.95 ages and ap-plied them to biomed-i-cal prob-lems funded throu
 gh the Na-tional In-sti-tute of Health (5R01GM074806,
  []
 
-[5]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 204.
 
@@ -524,40 +523,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 216.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 216.
 [6] [7]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 275.
+               Default added (so using `tbp') on input line 276.
 
 [8]
 (C:\Users\Micheal\Dropbox\Professional\KL2\BigDataR01\ResearchPlan\ResearchPlan
 rstanarm.bbl [9])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 
 (C:\Users\Micheal\Dropbox\Professional\KL2\BigDataR01\ResearchPlan\ResearchPlan
 rstanarm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `ResearchPlanrstanarm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 9135 strings out of 493921
- 131626 string characters out of 3147276
+ 9131 strings out of 493921
+ 131577 string characters out of 3147276
  324023 words of memory out of 3000000
- 12277 multiletter control sequences out of 15000+200000
- 38573 words of font info for 53 fonts, out of 3000000 for 9000
+ 12275 multiletter control sequences out of 15000+200000
+ 35717 words of font info for 51 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  41i,10n,38p,1420b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
@@ -565,12 +560,11 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvet
-ic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on ResearchPlanrstanarm.pdf (10 pages, 126401 bytes).
+ic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on ResearchPlanrstanarm.pdf (10 pages, 120284 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
