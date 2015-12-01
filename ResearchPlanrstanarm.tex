@@ -232,21 +232,40 @@ The project proposes to develop further develop these two prototypes (1) $rstana
 \subsection*{(1) rstanarm}
 The software package $rstanarm$ will enable the estimation of advanced applied general linear regression models using the existing probabilistic programming language $Stan$. $rstanarm$ implements full Bayesian statistical inference;  however, $rstanarm$ will allow users to specify their complex hierarchical models relying on the simplified syntax already commonly used in standard software packages like $lme4$ in the statistical software environment $R$. 
 
-\subsubsection*{Simple specification for complex hierarchical models}
+\subsubsection*{rstanarm allows simple specification for complex hierarchical models}
 
-Models are specified using customary R modeling syntax, e.g. analogously to $lme4$, $rstanarm$ uses a two-sided linear formula describing both the fixed-effects and random-effects part of the model; 
+Data scientists familiar with the widely used statistical software environment R will find $rstanarm$ intuitive, because models are specified using customary R modeling syntax, e.g. analogously to $lme4$, $rstanarm$ uses a two-sided linear formula describing both the fixed-effects and random-effects part of the model; 
 
 $y \sim x1 +(x2|x3)$ 
 
-where the dependent response variable, in this case $y$, are on the left of a $~$ operator and the independent terms, here $x_1, x_2...$,on the right  are separated by $+$ operators. Random-effects terms are distinguished by vertical bars $|$ separating expressions for design matrices from grouping factors. Clinical data scientist can therefore take advantage of the  more efficient inference of the cutting edge algorithms implemented in $Stan$, without knowledge of the underlying programming language or the auxiliary reparametrizations useful to achieve faster model convergence, discussed below.
+where the dependent response variable, in this case $y$, are on the left of a $~$ operator and the independent terms, here $x_1, x_2...$,on the right  are separated by $+$ operators. Random-effects terms are distinguished by vertical bars $|$ separating expressions for design matrices from grouping factors. Clinical data scientist can therefore take advantage of the  more efficient inference of the cutting edge algorithms implemented in $Stan$, without knowledge of the underlying programming language or the auxiliary reparametrizations useful to achieve faster model convergence, which we discuss further below.
 
-\subsubsection*{Model scope}
-The prototype of $rstanarm$ already implements many modeling functions; the classical generalized linear regression model functions $stan\_glm$ and $stan\_glmer$ are illustrated below to demonstrate simplicity of model formulation.  
+\subsubsection*{A suite of pre-compiled Stan models allows for a simple call to complex modeling functions}
 
-Bayesian generalized linear models with and without group-specific terms via Stan are already implemented in $rstanarm$. The $stan\_glm$ and $stan\_glmer$ functions are similar in syntax to the R software functions $glm$ and $glmer$ as used in the R package $lme4$, respectively, but rather than maximum likelihood estimation of generalized linear models, full Bayesian estimation is performed  via MCMC. 
+The prototype of $rstanarm$ already implemented many Bayesian generalized linear models with and without group-specific terms. We wrote many optimized models in the probabilistic programming language $Stan$, which have been pre-compiled. Users call these complex models via simple functions, as detailed in Table \ref{ProcessTable}:
 
+$rstanarm$ relies on a similar structure as the package $lme4$. The user interacts with a top level function, e.g. $stan\_aov$ for a simple ANOVA; $rstanarm$ parses the model specification and calls a linear model function $stan\_lm$, (directly available to the more advanced user) to convert the ANOVA model into a linear model; $rstanarm$ subsequently calls the Stan function $stan\_lm.fit$, which hands the required data to the pre-compiled  $Stan$ model $lm.stan$, and formats the returned output to return it to the user via the interfacing function. 
 
+\begin{table}[h]
+\footnotesize
+\begin{tabular}{@{}
+>{\columncolor[HTML]{EFEFEF}}l l@{}}
+\toprule
+\textbf{Function Call} & \textbf{Underlying process}                        \\ \midrule
+stan\_aov               & User interface for simplified model specification  \\
+stan\_lm               & Parsing linear model specification \\
+stan\_lm.fit           & Workhorse function to call pre-comiled Stan model  \\
+lm.stan                & Pre-compiled optimized Stan model                   \\ \bottomrule
+\end{tabular}
 
+\caption{\footnotesize The user interfaces with a wrapper function, e.g. for an ANOVA model $stan\_aov$, which parses the model specification and hands the data and user specification via linear model functions, in this case $stan\_lm$ to a lower level workhorse function, here $stan\_lm.fit$; these in turn execute the specific pre-compiled and optimized $Stan$ model $lm.stan$, then format and return the MCMC output back via the user interface function $stan\_aov$ to the data scientist.}
+\label{ProcessTable}
+
+\end{table}
+
+The $stan\_lm$, $stan\_glm$ and $stan\_glmer$ functions are similar in syntax to the R software functions $glm$ and $glmer$ as used in the R package $lme4$, respectively, but rather than maximum likelihood estimation of generalized linear models, full Bayesian estimation is performed via MCMC. 
+
+\subsubsection*{Prior}
 
 In Bayesian inference, priors incorporate subjective beliefs or existing information about a parameter as discussed under significance. All Bayesian models need priors and the prototype of \textit{rstanarm} already adds independent weakly informative priors on the coefficients of the generalized linear model, but prior can be specified by the user. The specification of the prior can such be left to the default implementation in \textit{rstanarm} or the user can choose from a broad array of distribution, e.g. for the intercept one might choose the Student t distribution, which approaches the normal distribution as the degrees of freedom approach infinity and as the degrees of freedom are one, the Cauchy distribution, leaving the user the option of robust priors to allow for outliers. 
 
@@ -312,7 +331,7 @@ Any documentation is released under the same license as Wikipedia, the Creative 
 \textbf{Fifth}  & \multicolumn{2}{l|}{scale missing data integration to larger datasets}                                                                                                                                                                                            &                                                                                                  \\ \bottomrule
 \end{tabular}
 
-\caption{\footnotesize The above time line delineates the planned project progress by year. After setting up the project team in the first year and submitting the rstanarm package to CRAN, in year two and three, we will sequentially add additional model level to existing functions and start to develop new functions for meta-analysis and change point models, scaling also these to multilevel models. In the forth project year, we will begin to integrate missing data algorithms into rstanarm and finally scale the packages to large dataset in year five.  }
+\caption{\footnotesize The above time line delineates the planned project progress by year. After setting up the project team in the first year and submitting the rstanarm package to CRAN, in year two and three, we will sequentially add additional model level to existing functions and start to develop new functions for meta-analysis and change point models, scaling also these to multilevel models. In the forth project year, we will begin to integrate missing data algorithms into rstanarm and finally scale the packages to large dataset in year five.}
 
 \label{Timeline}
 \end{table}
